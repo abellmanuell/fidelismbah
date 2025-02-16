@@ -13,6 +13,11 @@ import {
   BiYoutube,
   CoFacebook,
   BiInstagram,
+  BiArrowRight,
+  BiArrowLeft,
+  FaRegularHandshake,
+  PxTrending,
+  GiPalmTree,
 } from "oh-vue-icons/icons";
 addIcons(
   GiHamburgerMenu,
@@ -21,6 +26,11 @@ addIcons(
   PrLinkedin,
   BiYoutube,
   BiInstagram,
+  BiArrowRight,
+  BiArrowLeft,
+  FaRegularHandshake,
+  PxTrending,
+  GiPalmTree,
   CoFacebook
 );
 
