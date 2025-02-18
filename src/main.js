@@ -5,6 +5,10 @@ import Home from "@/app/Home.vue";
 import { createRouter } from "vue-router";
 import { createWebHistory } from "vue-router";
 import { OhVueIcon, addIcons } from "oh-vue-icons";
+import PrimeVue from "primevue/config";
+import Aura from "@primevue/themes/aura";
+import Carousel from "primevue/carousel";
+
 import {
   GiHamburgerMenu,
   PrArrowUpRight,
@@ -43,6 +47,10 @@ const router = createRouter({
 
 const app = createApp(App);
 
+app.component("Carousel", Carousel);
 app.use(router);
+app.use(PrimeVue, {
+  theme: Aura,
+});
 app.component("v-icon", OhVueIcon);
 app.mount("#app");
