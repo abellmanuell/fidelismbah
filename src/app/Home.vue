@@ -116,5 +116,7 @@ const socialnetworks = [
       </div>
     </div>
   </section>
+
+  <!-- Foot component -->
   <Footer />
 </template>

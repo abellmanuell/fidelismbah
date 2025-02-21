@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
-import Home from "@/app/Home.vue";
 import { createRouter } from "vue-router";
 import { createWebHistory } from "vue-router";
 import { OhVueIcon, addIcons } from "oh-vue-icons";
@@ -23,6 +22,10 @@ import {
   PxTrending,
   GiPalmTree,
 } from "oh-vue-icons/icons";
+
+import Home from "@/app/Home.vue";
+import About from "@/app/About.vue";
+
 addIcons(
   GiHamburgerMenu,
   PrArrowUpRight,
@@ -38,7 +41,10 @@ addIcons(
   CoFacebook
 );
 
-const routes = [{ path: "/", component: Home }];
+const routes = [
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+];
 
 const router = createRouter({
   history: createWebHistory(),
