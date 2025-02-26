@@ -13,44 +13,48 @@
     </div>
 
     <div class="flex flex-col-reverse lg:grid grid-cols-[150px_auto]">
-      <ul class="grid grid-cols-3 gap-2 lg:block lg:space-y-4">
+      <ul class="flex lg:flex-col">
         <li v-for="service of services">
           <RouterLink
             to="#"
-            class="flex flex-col items-center space-x-2 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white w-32 text-center p-4 text-sm"
+            class="flex flex-col items-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white w-32 text-center p-2 text-sm"
           >
-            <v-icon name="fa-regular-handshake" scale="2" />
+            <v-icon :name="service.icon" scale="2" />
             <span> {{ service.title }} </span>
           </RouterLink>
         </li>
       </ul>
 
-      <div class="my-5 lg:m-0">
+      <div class="mb-10 lg:m-0">
         <div class="h-[400px]">
           <img src="/image.png" alt="" class="w-full h-[400px] object-cover" />
         </div>
 
-        <Heading_3 content="Speaking" class-name="text-left text-sm my-4" />
+        <Heading_3
+          content="Public Communications"
+          class-name="text-left text-sm my-4"
+        />
         <Paragraph>
-          Speakingamet, id Ut eget tempor vehicula, Quisque Nullam libero, ex.
-          placerat felis, Cras varius Sed lacus, eget massa ex Vestibulum urna.
-          eu nulla, Nam eget lacus, Nam vel vitae non vitae faucibus Ut
-          tincidunt quam eget nulla, ultrices amet, ex
+          Fidelis Mbah as an Expert communicator with a knacks for crafting
+          compelling narratives and as a Public communicator, Fidelis is
+          passionate about harnessing the power of storytelling to drive social
+          change. Fidelis has worked with project tha explores the intersection
+          of media, technology and society, sharing insights on effective
+          communication and effective storytelling.
         </Paragraph>
         <br />
+        <Heading_3
+          content="What you’ll gain"
+          class-name="text-left text-sm my-4"
+        />
         <Paragraph>
-          scelerisque faucibus nisi quam elit Donec lacus, amet, nibh odio elit.
-          nisi ex sollicitudin. enim. urna laoreet dui sollicitudin. tincidunt
-          Donec quis elit. at, tincidunt ac turpis facilisis malesuada sodales.
-          lacus, In ipsum scelerisque
+          Building credibility and trust; achieving and promoting transparent
+          communication that establishes trust with audience, stakeholder and
+          the publc. Driving engagement and participation; fostering organic
+          communication that builds and engage communities around shared
+          interest values and goals.
         </Paragraph>
         <br />
-        <Paragraph>
-          Donec urna. sapien Donec urna varius ex Nunc viverra risus ac urna.
-          leo. eget consectetur tempor in ullamcorper non efficitur. dignissim,
-          diam luctus odio facilisis fringilla Nullam felis, leo. faucibus nibh
-          sollicitudin. Quisque non. non
-        </Paragraph>
       </div>
     </div>
   </section>
@@ -91,8 +95,6 @@ import { cn } from "../utils/cn";
 import Navigationbar from "../components/basket/Navigationbar.vue";
 import Footer from "../components/basket/Footer.vue";
 import Heading_3 from "../components/basket/Heading_3.vue";
-import Testimonial from "../components/Testimonial.vue";
-
 const services = [
   {
     icon: "fa-regular-handshake",

@@ -27,20 +27,33 @@
       class="!text-3xl lg:!text-4xl mb-5 text-white"
     />
     <Paragraph class="text-white">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
-      vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
-      ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique,
-      tortor mauris molestie elit, et luctus enim justo nec erat. Aliquam erat
-      volutpat. Donec eleifend lectus at sem scelerisque accumsan. Suspendisse
-      sit amet metus sit amet diam ultrices porta.
+      Fidelis Mbah is an award-winning international journalist with more than
+      two decades of reporting and interviewing influential personalities across
+      the world.
+      <br />
+      He is also a multimedia consultant, public communications expert, policy
+      strategist, and brand expert.
     </Paragraph>
     <br />
     <Paragraph>
-      Praesent non adipiscing libero. Nullam sit amet arcu laoreet, fringilla
-      lorem sit amet, fermentum nisl. Nam lacinia velit in est posuere, in
-      venenatis ligula pellentesque. Donec et iaculis tellus. Vivamus luctus
-      eros aliquet convallis ultricies. Mauris vel tellus non nunc mattis
-      lobortis. Nam ut erat sit amet libero auctor semper.
+      Fidelis is presently a correspondent with Al Jazeera English Television.
+      He was recently elected as the deputy President of International Press
+      Institute (IPI) Nigeria chapter.
+    </Paragraph>
+    <br />
+    <Paragraph>
+      He has also worked as News Correspondent of the BBC World Service in
+      Africa and the U.K. , Africa Deputy Director at CGTN Africa (CCTV News) in
+      Kenya, Africa Correspondent at TRTWORLD in Turkey, the Nigeria reporter of
+      the Associated Press (AP), and the Nigeria Producer for the American
+      network, NBC NEWS.
+    </Paragraph>
+    <br />
+    <Paragraph>
+      In recent years, he has covered elections across several countries, and
+      reported political, economic and development news. He has also mentored
+      journalists and organises media trainings for media executives and
+      editors.
     </Paragraph>
   </section>
 
@@ -120,38 +133,52 @@
       class="bg-primary-500 px-20 py-10 lg:px-40 lg:py-10 bg-[url(/pattern.svg)]"
     >
       <div
-        class="bg-white grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 gap-10 p-10"
+        class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-10"
       >
-        <div class="border p-4 flex flex-col items-center justify-center h-60">
-          <div class="flex items-center justify-center bg-red-500 w-full">
-            <img src="/image.png" alt="CCN" />
+        <div class="border p-4">
+          <div>
+            <img src="/image.png" alt="CCN" class="h-20 w-full" />
           </div>
           <br />
           <Paragraph>
-            dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-            ultrices ac tempor dolor Ut
+            Fidelis expertly harnesses the power of digital platforms to craft
+            compelling naratives and drive engagements that resonates with
+            diverse audiences.
           </Paragraph>
         </div>
 
-        <div class="border p-4 flex flex-col items-center justify-center h-60">
-          <div class="flex items-center justify-center bg-[#FD9927] w-full">
-            <img src="/image2.png" alt="CCN" />
+        <div class="border p-4">
+          <div>
+            <img src="/image2.png" alt="CCN" class="h-20 w-full" />
           </div>
           <br />
           <Paragraph>
-            dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-            ultrices ac tempor dolor Ut
+            Highly acclaimed Aljazeera Reporter, acknowledged for delivering
+            balanced and unwavering integrity of Global events
           </Paragraph>
         </div>
 
-        <div class="border p-4 flex flex-col items-center justify-center h-60">
-          <div class="flex items-center justify-center bg-[#BFAE62] w-full">
-            <img src="/image3.png" alt="CCN" />
+        <div class="border p-4">
+          <div>
+            <img src="/image3.png" alt="CCN" class="h-20 w-full" />
           </div>
           <br />
           <Paragraph>
-            dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-            ultrices ac tempor dolor Ut
+            With impeccable judgements, strategic acumen, Fidelis delivers
+            successful press campaigns that shapes public discourse and foster
+            lasting impressions
+          </Paragraph>
+        </div>
+
+        <div class="border p-4">
+          <div>
+            <img src="/image4.png" alt="CCN" class="h-20 w-full" />
+          </div>
+          <br />
+          <Paragraph>
+            Fidelis is a highly respected and accomplished senior producer,
+            praised for exceptional leadership, creative vision and an
+            unwavering commitment to excellence
           </Paragraph>
         </div>
       </div>

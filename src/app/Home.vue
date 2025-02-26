@@ -13,11 +13,20 @@ import Blog from "../components/Blog.vue";
 import Footer from "../components/basket/Footer.vue";
 
 const socialnetworks = [
-  { icon: "bi-twitter", href: "#" },
-  { icon: "pr-linkedin", href: "#" },
+  { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
+  {
+    icon: "pr-linkedin",
+    href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",
+  },
   { icon: "co-facebook", href: "#" },
-  { icon: "bi-youtube", href: "#" },
-  { icon: "bi-instagram", href: "#" },
+  {
+    icon: "bi-youtube",
+    href: "https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber",
+  },
+  {
+    icon: "bi-instagram",
+    href: "https://www.instagram.com/fidelismbah/?hl=en",
+  },
 ];
 </script>
 
@@ -42,19 +51,15 @@ const socialnetworks = [
         class="!text-4xl text-white lg:!text-5xl"
       />
 
-      <div class="text-white">
+      <div class="text-white my-4">
         <Paragraph class-name="text-xl">
-          tempor cursus viverra Cras quis tincidunt tincidunt faucibus fringilla
-          ullamcorper tincidunt Morbi efficitur. maximus Nam
+          Journalism/Media Relations/Crisis Communication/Strategic
+          Communications/Advocacy
         </Paragraph>
         <br />
         <Paragraph class-name="text-xl">
-          sapien sit consectetur cursus consectetur eu diam eget quis ex
-        </Paragraph>
-        <br />
-        <Paragraph class-name="text-primary-200">
-          The ultrices Donec nec cursus in placerat vitae Donec Lorem est.
-          sapien sit consectetur cursus consectetur eu diam eget quis ex
+          Excellent media/communications professional with strong journalistic
+          credentials.
         </Paragraph>
       </div>
 
@@ -71,9 +76,9 @@ const socialnetworks = [
       <div>
         <ul class="flex space-x-4 text-white">
           <li v-for="social of socialnetworks">
-            <RouterLink :to="social.href">
-              <v-icon :name="social.icon" scale="1.5" />
-            </RouterLink>
+            <a :href="social.href" target="_blank">
+              <v-icon :name="social.icon" scale="1" />
+            </a>
           </li>
         </ul>
       </div>

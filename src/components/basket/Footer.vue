@@ -5,11 +5,20 @@ import Paragraph from "./Paragraph.vue";
 import Heading_2 from "./Heading_2.vue";
 
 const socialnetworks = [
-  { icon: "bi-twitter", href: "#" },
-  { icon: "pr-linkedin", href: "#" },
+  { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
+  {
+    icon: "pr-linkedin",
+    href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",
+  },
   { icon: "co-facebook", href: "#" },
-  { icon: "bi-youtube", href: "#" },
-  { icon: "bi-instagram", href: "#" },
+  {
+    icon: "bi-youtube",
+    href: "https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber",
+  },
+  {
+    icon: "bi-instagram",
+    href: "https://www.instagram.com/fidelismbah/?hl=en",
+  },
 ];
 </script>
 
@@ -20,10 +29,14 @@ const socialnetworks = [
         <img :src="logo" alt="Fidelis Logo" />
       </div>
 
-      <Paragraph>
-        tempor cursus viverra Cras quis tincidunt <br />
-        tincidunt faucibus fringilla ullamcorper <br />
-        tincidunt Morbi efficitur.
+      <Paragraph class="lg:w-2/5">
+        Fidelis Mbah is a consummate Journalist known for incisive reporting,
+        meticulous research and a gift for storytelling.
+        <br />
+        <br />
+        With an unwavering commitment to fact driven stories and an unrelenting
+        pursuit of truth, Fidelis dedicated to shedding light on the stories
+        that need to be told.
       </Paragraph>
 
       <div>
@@ -39,9 +52,9 @@ const socialnetworks = [
       <div>
         <ul class="flex space-x-4">
           <li v-for="social of socialnetworks">
-            <RouterLink :to="social.href">
-              <v-icon :name="social.icon" scale="1.5" />
-            </RouterLink>
+            <a :href="social.href">
+              <v-icon :name="social.icon" scale="1" />
+            </a>
           </li>
         </ul>
       </div>
@@ -80,23 +93,23 @@ const socialnetworks = [
           <Heading_2 class-name="text-red-500 text-left" content="Pages" />
           <ul class="text-sm space-y-4">
             <li>
-              <RouterLink to=""> About </RouterLink>
+              <RouterLink to="/about"> About </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Services </RouterLink>
+              <RouterLink to="/services"> Services </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Projects </RouterLink>
+              <RouterLink to="/projects"> Projects </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Blogs </RouterLink>
+              <RouterLink to="/blogs"> Blogs </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Contact </RouterLink>
+              <RouterLink to="/contact"> Contact </RouterLink>
             </li>
           </ul>
         </div>

@@ -65,8 +65,8 @@ const responsiveOptions = ref([
     <div class="mb-10">
       <Heading_2 content="Client Testimonial" />
       <Paragraph class-name="text-center"
-        >dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-        ultrices ac tempor dolor Ut
+        >Words from client’s who have experienced the value of my Journalism
+        skills, work ethic and collaborative spirit
       </Paragraph>
     </div>
     <Carousel

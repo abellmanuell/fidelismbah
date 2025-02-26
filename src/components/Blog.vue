@@ -58,8 +58,8 @@ const products = [
     <div class="mb-10">
       <Heading_2 content="Blog and Media" />
       <Paragraph class-name="text-center"
-        >dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-        ultrices ac tempor dolor Ut
+        >Where Journalism meets perspective: My insight, analysis and commentary
+        on stories that shapes our world
       </Paragraph>
     </div>
 

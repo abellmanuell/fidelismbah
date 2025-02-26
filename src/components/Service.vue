@@ -26,27 +26,18 @@ import Paragraph from "@/components/basket/Paragraph.vue";
 
         <div>
           <Paragraph>
-            amet, non. non lacus In elementum leo. Donec felis, cursus sit id
-            tortor. elit. adipiscing Nunc urna. id Donec luctus Ut in ex at
-            elementum elit volutpat eget
+            Leverage my journalism expertise to craft compelling content,
+            investigate complex issues, and tell unforgettable stories.
           </Paragraph>
           <br />
           <Paragraph>
-            tincidunt ex convallis. malesuada id amet, eget placerat est. quam
-            urna Nam varius vitae lacus tortor. gravida luctus Nunc Nam Nam ac
-            convallis. amet, ex odio
+            Whether you need a freelance journalist, content creator or media
+            consultant, Fidelis have got you covered
           </Paragraph>
           <br />
           <Paragraph>
-            amet, quis non lacus orci faucibus non diam massa ipsum Donec
-            fringilla viverra elit Nam placerat. fringilla nibh felis, nisi
-            nisl. Ut quis nulla, elit diam
-          </Paragraph>
-          <br />
-          <Paragraph>
-            eu tincidunt amet, quis laoreet facilisis Ut consectetur quis porta
-            volutpat at, consectetur quam ultrices urna non tempor dolor
-            placerat sapien ex quam sit
+            transforming information into engaging stories through expert
+            research, interviewing and writing services
           </Paragraph>
         </div>
 
@@ -74,9 +65,7 @@ import Paragraph from "@/components/basket/Paragraph.vue";
             <v-icon name="fa-regular-handshake" scale="3" />
           </span>
           <Paragraph class="text-center my-4">
-            eu tincidunt amet, quis laoreet facilisis Ut consectetur quis porta
-            volutpat at, consectetur quam ultrices urna non tempor dolor
-            placerat sapien ex quam sit
+            Public Communications
           </Paragraph>
           <span
             class="bg-primary-500 rounded-full inline-block text-white p-1 absolute -bottom-5"
@@ -91,11 +80,7 @@ import Paragraph from "@/components/basket/Paragraph.vue";
           <span>
             <v-icon name="px-trending" scale="3" />
           </span>
-          <Paragraph class="text-center my-4">
-            eu tincidunt amet, quis laoreet facilisis Ut consectetur quis porta
-            volutpat at, consectetur quam ultrices urna non tempor dolor
-            placerat sapien ex quam sit
-          </Paragraph>
+          <Paragraph class="text-center my-4"> Creative Writing </Paragraph>
           <span
             class="bg-primary-500 rounded-full inline-block text-white p-1 absolute -bottom-5"
           >
@@ -109,11 +94,7 @@ import Paragraph from "@/components/basket/Paragraph.vue";
           <span>
             <v-icon name="gi-palm-tree" scale="3" />
           </span>
-          <Paragraph class="text-center my-4">
-            eu tincidunt amet, quis laoreet facilisis Ut consectetur quis porta
-            volutpat at, consectetur quam ultrices urna non tempor dolor
-            placerat sapien ex quam sit
-          </Paragraph>
+          <Paragraph class="text-center my-4"> Media Production </Paragraph>
           <span
             class="bg-primary-500 rounded-full inline-block text-white p-1 absolute -bottom-5"
           >

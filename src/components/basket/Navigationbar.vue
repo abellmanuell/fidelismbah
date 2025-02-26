@@ -9,7 +9,7 @@ const routes = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
   { name: "Services", to: "/services" },
-  { name: "Project", to: "/project" },
+  { name: "Project", to: "/projects" },
   { name: "Blog", to: "/blog" },
 ];
 
