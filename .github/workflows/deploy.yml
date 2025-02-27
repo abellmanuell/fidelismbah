@@ -13,7 +13,7 @@ jobs:
         node-version: [21]
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install pnpm
         uses: pnpm/action-setup@v3
@@ -21,7 +21,7 @@ jobs:
           version: latest
 
       - name: Use NodeJS ${{matrix.node-version}}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{matrix.node-version}}
           cache: pnpm
@@ -34,13 +34,19 @@ jobs:
 
   deploy:
     name: Deploy application
+    runs-on: ubuntu-latest
     needs: [build]
-    uses: cpina/github-action-push-to-another-repository@main
-    env:
-      SSH_DEPLOY_KEY: ${{secrets.DEPLOY_SSH_KEY}}
-    with:
-      user-email:
-      create-target-branch-if-needed: true
-      source-directory: "dist"
-      destination-github-username: ${{ secrets.DEPLOY_GITHUB_USERNAME }}
-      destination-repository-name: ${{ secrets.DEPLOY_GITHUB_REPOSITORY }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Copy files to another respository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{secrets.DEPLOY_SSH_KEY}}
+        with:
+          user-email:
+          create-target-branch-if-needed: true
+          source-directory: "dist"
+          destination-github-username: ${{ secrets.DEPLOY_GITHUB_USERNAME }}
+          destination-repository-name: ${{ secrets.DEPLOY_GITHUB_REPOSITORY }}
