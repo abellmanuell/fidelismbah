@@ -7,6 +7,7 @@ import { OhVueIcon, addIcons } from "oh-vue-icons";
 import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
 import Carousel from "primevue/carousel";
+import VueWriter from "vue-writer";
 
 import {
   GiHamburgerMenu,
@@ -62,5 +63,6 @@ app.use(router);
 app.use(PrimeVue, {
   theme: Aura,
 });
+app.use(VueWriter);
 app.component("v-icon", OhVueIcon);
 app.mount("#app");

@@ -14,7 +14,7 @@ import Paragraph from "@/components/basket/Paragraph.vue";
       <div class="my-10">
         <img :src="project_image" alt="Project Image" class="w-full" />
       </div>
-      <Paragraph class="text-primary-500 px-4 lg:px-40 w-4xl m-auto">
+      <Paragraph class="text-primary-500 px-4 lg:px-40 lg:w-4xl m-auto">
         Delving into the issues that matter; indepth reporting, thought
         provoking discussion and media appearances that spark conversations
       </Paragraph>

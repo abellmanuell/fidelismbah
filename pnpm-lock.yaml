@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@lottiefiles/dotlottie-vue':
+        specifier: ^0.5.6
+        version: 0.5.6(vue@3.5.13)
       '@primevue/themes':
         specifier: ^4.2.5
         version: 4.2.5
@@ -35,6 +38,9 @@ importers:
       vue-router:
         specifier: '4'
         version: 4.5.0(vue@3.5.13)
+      vue-writer:
+        specifier: ^2.0.2
+        version: 2.0.2(vue@3.5.13)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
@@ -358,6 +364,14 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@lottiefiles/dotlottie-vue@0.5.6':
+    resolution: {integrity: sha512-qOnkbGq059rx5sO34woXVk/8XzOlX33is+1o8o8jetCwYm7QyAwmWLHyj6de7eQBCsP5dHOchuDKb7GUtVLIRQ==}
+    peerDependencies:
+      vue: ^3.3.4
+
+  '@lottiefiles/dotlottie-web@0.40.1':
+    resolution: {integrity: sha512-iNz1rr8zRTSJ0xCZEPeoCX6YnaNhBdkF7gJWhSa8bwB4NTrYZm0vAuC0jF/aLLhU7q9nf6ykxffrz0Sf4JPSPg==}
 
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
@@ -1134,6 +1148,12 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
+  vue-writer@2.0.2:
+    resolution: {integrity: sha512-k3Zos5f86REHoY6XRGjEHArUsd7EjUAUu0ehpPWnkHzbc9nPmzboZfw3PmPe9thN8L/QAJve69rHcUU+llFM/g==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      vue: ^3.4.21
+
   vue@3.5.13:
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
     peerDependencies:
@@ -1443,6 +1463,13 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@lottiefiles/dotlottie-vue@0.5.6(vue@3.5.13)':
+    dependencies:
+      '@lottiefiles/dotlottie-web': 0.40.1
+      vue: 3.5.13
+
+  '@lottiefiles/dotlottie-web@0.40.1': {}
 
   '@polka/url@1.0.0-next.28': {}
 
@@ -2146,6 +2173,10 @@ snapshots:
   vue-router@4.5.0(vue@3.5.13):
     dependencies:
       '@vue/devtools-api': 6.6.4
+      vue: 3.5.13
+
+  vue-writer@2.0.2(vue@3.5.13):
+    dependencies:
       vue: 3.5.13
 
   vue@3.5.13:
