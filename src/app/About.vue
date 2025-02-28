@@ -80,13 +80,12 @@
   </section>
 
   <section :class="cn('py-32 lg:px-0')">
-    <div class="lg:w-96 m-auto text-center mb-15">
-      <Heading_2 content="Key achievement and recognition" />
-      <Paragraph class="text-primary-500">
+    <HeaderCaption
+      title="Key achievement and recognition"
+      subTitle="
         Recognition for commitment to truth and storytelling, highlighting
-        exceptional reporting in the field of Journalism
-      </Paragraph>
-    </div>
+        exceptional reporting in the field of Journalism."
+    />
 
     <div
       class="grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 bg-primary-300 px-20 py-10 lg:px-40 lg:py-10 gap-10"
@@ -121,13 +120,12 @@
   </section>
 
   <section :class="cn('py-32 lg:px-0')">
-    <div class="lg:w-96 m-auto text-center mb-15">
-      <Heading_2 content="Media appearance" />
-      <Paragraph class="text-primary-500">
+    <HeaderCaption
+      title="Media Appearance"
+      subTitle="
         Words from client’s who have experienced the value of my Journalism
-        skills, work ethic and collaborative spirit
-      </Paragraph>
-    </div>
+        skills, work ethic and collaborative spirit"
+    />
 
     <div
       class="bg-primary-500 px-20 py-10 lg:px-40 lg:py-10 bg-[url(/pattern.svg)]"
@@ -135,50 +133,13 @@
       <div
         class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-10"
       >
-        <div class="border p-4">
+        <div v-for="{ src, description } of media" class="border p-4">
           <div>
-            <img src="/image.png" alt="CCN" class="h-20 w-full" />
+            <img :src="src" alt="CCN" class="h-20 w-full" />
           </div>
           <br />
           <Paragraph>
-            Fidelis expertly harnesses the power of digital platforms to craft
-            compelling naratives and drive engagements that resonates with
-            diverse audiences.
-          </Paragraph>
-        </div>
-
-        <div class="border p-4">
-          <div>
-            <img src="/image2.png" alt="CCN" class="h-20 w-full" />
-          </div>
-          <br />
-          <Paragraph>
-            Highly acclaimed Aljazeera Reporter, acknowledged for delivering
-            balanced and unwavering integrity of Global events
-          </Paragraph>
-        </div>
-
-        <div class="border p-4">
-          <div>
-            <img src="/image3.png" alt="CCN" class="h-20 w-full" />
-          </div>
-          <br />
-          <Paragraph>
-            With impeccable judgements, strategic acumen, Fidelis delivers
-            successful press campaigns that shapes public discourse and foster
-            lasting impressions
-          </Paragraph>
-        </div>
-
-        <div class="border p-4">
-          <div>
-            <img src="/image4.png" alt="CCN" class="h-20 w-full" />
-          </div>
-          <br />
-          <Paragraph>
-            Fidelis is a highly respected and accomplished senior producer,
-            praised for exceptional leadership, creative vision and an
-            unwavering commitment to excellence
+            {{ description }}
           </Paragraph>
         </div>
       </div>
@@ -195,20 +156,11 @@
       )
     "
   >
-    <div class="w-[400px] space-y-4">
-      <Heading_1
-        content="Start the conversation that will transform your Story, Brand and Events"
+    <div>
+      <LearnMore
+        title="Start the conversation that will transform your Story, Brand and Events"
+        :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
       />
-
-      <div>
-        <RouterLink
-          to="/learn-more"
-          class="text-sm py-2 px-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white"
-        >
-          <span>LEARN MORE</span>
-          <v-icon name="pr-arrow-up-right" scale="1" />
-        </RouterLink>
-      </div>
     </div>
   </section>
 
@@ -223,6 +175,30 @@ import Heading_1 from "../components/basket/Heading_1.vue";
 import { cn } from "../utils/cn";
 import Navigationbar from "../components/basket/Navigationbar.vue";
 import Footer from "../components/basket/Footer.vue";
-import Heading_2 from "../components/basket/Heading_2.vue";
 import Testimonial from "../components/Testimonial.vue";
+import HeaderCaption from "../components/HeaderCaption.vue";
+import LearnMore from "../components/LearnMore.vue";
+
+const media = [
+  {
+    description:
+      "Fidelis expertly harnesses the power of digital platforms to craft compelling naratives and drive engagements that resonates with diverse audiences.",
+    src: "/image.png",
+  },
+  {
+    description:
+      "Highly acclaimed Aljazeera Reporter, acknowledged for delivering balanced and unwavering integrity of Global events.",
+    src: "/image2.png",
+  },
+  {
+    description:
+      "With impeccable judgements, strategic acumen, Fidelis delivers successful press campaigns that shapes public discourse and foster lasting impressions",
+    src: "/image3.png",
+  },
+  {
+    description:
+      "Fidelis is a highly respected and accomplished senior producer, praised for exceptional leadership, creative vision and an unwavering commitment to excellence",
+    src: "/image4.png",
+  },
+];
 </script>

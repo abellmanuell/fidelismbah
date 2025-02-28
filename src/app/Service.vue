@@ -1,16 +1,11 @@
 <template>
   <Navigationbar />
   <section :class="cn('px-5 py-20 lg:py-40 lg:px-40 ')">
-    <div class="w-[400px] text-center m-auto my-10">
-      <Heading_1
-        class-name="mb-5"
-        content="Explore Our Comprehensive Services Tailored to Your Unique Needs"
-      />
-      <Paragraph>
-        Lorem ipsum dolor sit amet consectetur. Amet diam aliquam ut sem dolor
-        sed enim. Ligula massa vitae adipiscing neque sollicitudin blandit
-      </Paragraph>
-    </div>
+    <HeaderCaption
+      title="Explore Our Comprehensive Services Tailored to Your Unique Needs"
+      subTitle="Lorem ipsum dolor sit amet consectetur. Amet diam aliquam ut sem dolor
+        sed enim. Ligula massa vitae adipiscing neque sollicitudin blandit"
+    />
 
     <div class="flex flex-col-reverse lg:grid grid-cols-[150px_auto]">
       <ul class="flex lg:flex-col">
@@ -59,28 +54,11 @@
     </div>
   </section>
 
-  <section
-    :class="
-      cn(
-        ' bg-primary-300 h-screen flex items-center justify-center text-center'
-      )
-    "
-  >
-    <div class="w-[400px] space-y-4">
-      <Heading_1
-        content="Collaborate with Brands and Agenciesto create impactful results"
-      />
-
-      <div>
-        <RouterLink
-          to="/learn-more"
-          class="text-sm py-2 px-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white"
-        >
-          <span>LEARN MORE</span>
-          <v-icon name="pr-arrow-up-right" scale="1" />
-        </RouterLink>
-      </div>
-    </div>
+  <section>
+    <LearnMore
+      title="Start the conversation that will transform your Story, Brand and Events"
+      :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
+    />
   </section>
 
   <!-- Foot component -->
@@ -95,6 +73,8 @@ import { cn } from "../utils/cn";
 import Navigationbar from "../components/basket/Navigationbar.vue";
 import Footer from "../components/basket/Footer.vue";
 import Heading_3 from "../components/basket/Heading_3.vue";
+import LearnMore from "../components/LearnMore.vue";
+import HeaderCaption from "../components/HeaderCaption.vue";
 const services = [
   {
     icon: "fa-regular-handshake",

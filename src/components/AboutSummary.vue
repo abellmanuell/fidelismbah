@@ -8,17 +8,16 @@ import ap2 from "@/assets/ap2.png";
 import ap3 from "@/assets/ap3.png";
 import ap4 from "@/assets/ap4.png";
 import { cn } from "../utils/cn";
+import HeaderCaption from "./HeaderCaption.vue";
 </script>
 
 <template>
   <section :class="cn('py-32 px-4 lg:px-40')">
-    <div class="lg:w-96 m-auto text-center mb-15">
-      <Heading_2 content="About Fidelis" />
-      <Paragraph class="text-primary-500">
-        Award winning international Journalist and a correspondent with Al
-        Jazeera English television
-      </Paragraph>
-    </div>
+    <HeaderCaption
+      title="About Fidelis"
+      subTitle="Award winning international Journalist and a correspondent with Al Jazeera
+      English television"
+    />
 
     <div class="grid space-y-16 lg:space-y-0 lg:grid-cols-2 place-items-center">
       <div>
