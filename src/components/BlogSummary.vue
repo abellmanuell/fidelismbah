@@ -17,6 +17,7 @@
             efficitur. Cras adipiscing lorem. eu cursus Nunc sit nulla, ac
             placerat"
         src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"
+        date="November 31, 2025"
       />
       <Thumbnail
         title="Croatian Primer Minister forecast growth for his country"
@@ -24,6 +25,7 @@
             efficitur. Cras adipiscing lorem. eu cursus Nunc sit nulla, ac
             placerat"
         src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"
+        date="November 31, 2025"
       />
     </div>
 

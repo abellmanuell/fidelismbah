@@ -41,6 +41,9 @@ importers:
       vue-writer:
         specifier: ^2.0.2
         version: 2.0.2(vue@3.5.13)
+      vue3-carousel:
+        specifier: ^0.14.0
+        version: 0.14.0(vue@3.5.13)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
@@ -1154,6 +1157,11 @@ packages:
     peerDependencies:
       vue: ^3.4.21
 
+  vue3-carousel@0.14.0:
+    resolution: {integrity: sha512-YR3eEPKlcdUqAJmv41iVqbHhabz9AwFJqtgJgxQdtcYqDizUhHbC+aJbYvbG66FTViP+5lEqDmRQyn1IM8mXxQ==}
+    peerDependencies:
+      vue: ^3.5.0
+
   vue@3.5.13:
     resolution: {integrity: sha512-wmeiSMxkZCSc+PM2w2VRsOYAZC8GdipNFRTsLSfodVqI9mbejKeXEGr8SckuLnrQPGe3oJN5c3K0vpoU9q/wCQ==}
     peerDependencies:
@@ -2176,6 +2184,10 @@ snapshots:
       vue: 3.5.13
 
   vue-writer@2.0.2(vue@3.5.13):
+    dependencies:
+      vue: 3.5.13
+
+  vue3-carousel@0.14.0(vue@3.5.13):
     dependencies:
       vue: 3.5.13
 

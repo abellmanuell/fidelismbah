@@ -4,6 +4,7 @@ import project_image from "@/assets/project-image.png";
 import obi from "@/assets/obi.png";
 import Heading_2 from "@/components/basket/Heading_2.vue";
 import Paragraph from "@/components/basket/Paragraph.vue";
+import ImageCarousel from "../components/ImageCarousel.vue";
 </script>
 
 <template>
@@ -21,7 +22,7 @@ import Paragraph from "@/components/basket/Paragraph.vue";
     </div>
   </section>
 
-  <section :class="cn('pb-20 px-4 lg:px-40')">
+  <!--   <section :class="cn('pb-20 px-4 lg:px-40')">
     <div class="lg:flex lg:space-x-5 justify-center">
       <div
         class="flex flex-row-reverse lg:flex-col lg:items-center lg:space-x-2 lg:space-y-4 lg:max-w-[50px] border-b lg:border-b-0 lg:border-r border-primary-200 lg:px-4 py-4 lg:py-0"
@@ -96,5 +97,9 @@ import Paragraph from "@/components/basket/Paragraph.vue";
         </Paragraph>
       </div>
     </div>
+  </section> -->
+
+  <section :class="cn('pb-20 px-4 lg:px-40')">
+    <ImageCarousel />
   </section>
 </template>
