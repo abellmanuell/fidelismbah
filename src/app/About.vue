@@ -88,7 +88,7 @@
     />
 
     <div
-      class="grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 bg-primary-300 px-20 py-10 lg:px-40 lg:py-10 gap-10"
+      class="grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 bg-primary-300 px-4 sm:px-20 py-10 lg:px-40 lg:py-10 gap-10"
     >
       <div class="border p-4 flex flex-col items-center justify-center h-80">
         <Paragraph> sodales. ex. tortor. libero, Nunc </Paragraph>
@@ -128,10 +128,10 @@
     />
 
     <div
-      class="bg-primary-500 px-20 py-10 lg:px-40 lg:py-10 bg-[url(/pattern.svg)]"
+      class="bg-primary-500 px-5 py-10 lg:px-40 lg:py-10 bg-[url(/pattern.svg)]"
     >
       <div
-        class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-10"
+        class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-4 sm:p-10"
       >
         <div v-for="{ src, description } of media" class="border p-4">
           <div>

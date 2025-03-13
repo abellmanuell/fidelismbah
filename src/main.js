@@ -29,6 +29,7 @@ import About from "@/app/About.vue";
 import Service from "./app/Service.vue";
 import Projects from "./app/Projects.vue";
 import Blog from "./app/Blog.vue";
+import ContactMe from "./app/ContactMe.vue";
 
 addIcons(
   GiHamburgerMenu,
@@ -51,6 +52,7 @@ const routes = [
   { path: "/services", component: Service },
   { path: "/projects", component: Projects },
   { path: "/blog", component: Blog },
+  { path: "/contact-me", component: ContactMe },
 ];
 
 const router = createRouter({

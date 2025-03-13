@@ -62,7 +62,7 @@ function setIsCloseSidebar() {
           </ul>
           <div>
             <RouterLink
-              to="/learn-more"
+              to="/contact-me"
               class="text-sm py-2 px-4 rounded-full font-medium inline-block text-white bg-primary-500 transition-all"
             >
               <span> LET'S CONNECT </span>
