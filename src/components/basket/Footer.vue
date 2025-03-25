@@ -23,7 +23,7 @@ const socialnetworks = [
 </script>
 
 <template>
-  <section :class="cn('py-20 px-4 lg:px-40 lg:flex justify-between')">
+  <section :class="cn('py-20 px-4 lg:px-40  lg:flex justify-between')">
     <div class="space-y-8">
       <div class="h-[20%] flex">
         <img :src="logo" alt="Fidelis Logo" />
@@ -60,7 +60,7 @@ const socialnetworks = [
       </div>
     </div>
 
-    <div class="flex space-x-10">
+    <div class="space-x-10 flex lg:min-w-[300px]">
       <div class="mt-20 lg:mt-0">
         <div>
           <Heading_2 class-name="text-red-500 text-left" content="Services" />

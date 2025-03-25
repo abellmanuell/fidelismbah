@@ -15,10 +15,14 @@
     >
       <template #item="slotProps">
         <div
-          class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4"
+          class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4 w-[350px]"
         >
           <div>
-            <img :src="slotProps.data.src" alt="Fidelis" class="rounded" />
+            <img
+              :src="slotProps.data.src"
+              alt="Fidelis"
+              class="rounded m-auto"
+            />
           </div>
 
           <div class="mt-4">

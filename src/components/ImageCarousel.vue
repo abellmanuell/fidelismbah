@@ -1,7 +1,7 @@
 <template>
   <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="3000">
     <Slide v-for="(item, index) in items" :key="index">
-      <div class="carousel-item">
+      <div class="carousel-item space-x-5">
         <img :src="item.image" alt="Carousel Image" class="image" />
         <div class="content">
           <h4 class="tag">{{ item.tag }}</h4>
@@ -58,17 +58,16 @@ export default defineComponent({
 <style scoped>
 .carousel-item {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  text-align: center;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .image {
-  width: 10 0%;
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -77,11 +76,11 @@ export default defineComponent({
 }
 
 .tag {
-  background: #333;
+  background: #5c5c5c;
   color: #fff;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 5px;
+  padding: 2px;
+  font-size: 15px;
+  /* border-radius: 5px; */
   display: inline-block;
 }
 

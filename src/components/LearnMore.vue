@@ -1,13 +1,11 @@
 <template>
   <section
     :class="
-      cn(
-        ' bg-primary-200 h-screen flex items-center justify-center text-center'
-      )
+      cn(' bg-[#DCE3EA] h-screen flex items-center justify-center text-center')
     "
   >
-    <div class="w-[400px] space-y-4">
-      <Heading_1 :content="title" />
+    <div class="w-[500px] space-y-4">
+      <Heading_1 :content="title" class="!text-2xl" />
 
       <LinkButton :href="linkProps.href">{{ linkProps.name }}</LinkButton>
     </div>
@@ -17,7 +15,6 @@
 <script setup>
 import { cn } from "../utils/cn";
 import Heading_1 from "./basket/Heading_1.vue";
-import { defineProps } from "vue";
 import LinkButton from "./LinkButton.vue";
 
 const { className, linkProps, title } = defineProps({

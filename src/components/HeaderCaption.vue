@@ -1,7 +1,7 @@
 <template>
   <div class="lg:w-96 m-auto text-center mb-15">
     <Heading_2 :content="title" />
-    <Paragraph class="text-primary-500">
+    <Paragraph>
       {{ subTitle }}
     </Paragraph>
   </div>

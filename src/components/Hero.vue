@@ -27,13 +27,13 @@ const socialnetworks = [
   <section
     :class="
       cn(
-        'relative bg-cover bg-center bg-no-repeat py-40 px-5 lg:px-40 lg:grid grid-cols-2',
+        'relative bg-cover bg-center bg-no-repeat pt-72 pb-40 px-5 lg:px-20 lg:grid grid-cols-2 min-h-screen',
         `bg-[url(/photocolage.svg)]`
       )
     "
   >
     <div
-      class="absolute z-10 inset-0 bg-primary-500/80 lg:bg-primary-500/90 flex"
+      class="absolute z-10 inset-0 bg-primary-500/70 lg:bg-primary-500/70 flex"
     >
       <DotLottieVue
         style="height: 500px; width: 500px; opacity: 0.5"
@@ -51,7 +51,7 @@ const socialnetworks = [
 
     <div class="relative z-20 grid grid-rows-[auto_auto_auto] gap-10 lg:gap-5">
       <div class="mb-10">
-        <Heading_1 content="Fidelis Mbah." class="text-white !text-8xl mb-5" />
+        <Heading_1 content="Fidelis Mbah." class="text-white !text-5xl mb-5" />
 
         <Paragraph class-name="text-2xl text-white font-bold">
           <VueWriter
@@ -69,7 +69,7 @@ const socialnetworks = [
       <div>
         <RouterLink
           to="/learn-more"
-          class="text-sm py-2 px-4 border border-white rounded-full font-bold text-white hover:bg-primary-500 transition-all"
+          class="text-sm py-3 px-6 border border-white rounded-full font-bold text-white hover:bg-primary-500 transition-all"
         >
           <span> LEARN MORE </span>
           <v-icon name="pr-arrow-up-right" scale="1" />

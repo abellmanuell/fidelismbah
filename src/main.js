@@ -22,6 +22,9 @@ import {
   FaRegularHandshake,
   PxTrending,
   GiPalmTree,
+  GiSatelliteCommunication,
+  GiFeather,
+  BiCameraVideoFill,
 } from "oh-vue-icons/icons";
 
 import Home from "@/app/Home.vue";
@@ -43,7 +46,10 @@ addIcons(
   FaRegularHandshake,
   PxTrending,
   GiPalmTree,
-  CoFacebook
+  CoFacebook,
+  GiSatelliteCommunication,
+  GiFeather,
+  BiCameraVideoFill
 );
 
 const routes = [

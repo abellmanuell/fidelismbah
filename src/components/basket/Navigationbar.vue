@@ -31,7 +31,7 @@ function setIsCloseSidebar() {
       <div
         :class="
           cn(
-            'fixed z-50 w-full bg-white flex-rows-reverse justify-between px-4 py-5 transition-all lg:px-20 xl:px-40',
+            'fixed z-50 w-full bg-white flex-rows-reverse justify-between px-4 py-5 transition-all lg:px-20',
             !isOpenSidebar ? 'flex' : 'hidden'
           )
         "
@@ -40,7 +40,7 @@ function setIsCloseSidebar() {
           <img
             :src="logo"
             alt="Fidelis Logo"
-            :class="cn('max-w-16', !isOpenSidebar ? 'visible' : 'invisible')"
+            :class="cn(!isOpenSidebar ? 'visible' : 'invisible')"
           />
         </div>
 
@@ -63,7 +63,7 @@ function setIsCloseSidebar() {
           <div>
             <RouterLink
               to="/contact-me"
-              class="text-sm py-2 px-4 rounded-full font-medium inline-block text-white bg-primary-500 transition-all"
+              class="py-2 px-4 rounded-full font-medium inline-block text-white bg-primary-500 transition-all text-lg"
             >
               <span> LET'S CONNECT </span>
               <v-icon name="pr-arrow-up-right" scale="1" />

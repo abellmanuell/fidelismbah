@@ -9,7 +9,7 @@ const { className } = defineProps({
 </script>
 
 <template>
-  <p :class="cn('text-sm', className)">
+  <p :class="cn('text-neutral-700', className)">
     <slot />
   </p>
 </template>

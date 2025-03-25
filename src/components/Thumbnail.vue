@@ -5,7 +5,7 @@
     <div>
       <iframe class="w-full h-full" :src="src"> </iframe>
     </div>
-    <div>
+    <div class="lg:w-[540px]">
       <Heading_2 class-name="text-left text-black" :content="title" />
       <Paragraph class-name="text-primary-400">
         {{ description }}
