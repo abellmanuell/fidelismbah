@@ -71,7 +71,6 @@
 
     <LinkButton
       href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
-      target="_blank"
       >WATCH MORE VIDEOS</LinkButton
     >
   </section>
