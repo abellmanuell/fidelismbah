@@ -11,9 +11,11 @@
     <img :src="project_image" alt="Project Image" class="w-full" />
   </div>
 
-  <section :class="cn('px-5 py-20 lg:py-40 lg:px-40 lg:flex justify-between')">
+  <section
+    :class="cn('px-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:flex justify-between')"
+  >
     <div
-      class="grid lg:grid-cols-[200px_200px] place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
+      class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
     >
       <div>
         <img :src="obi" alt="Peter Obi in conversation" />
@@ -32,7 +34,7 @@
     </div>
 
     <div
-      class="grid lg:grid-cols-[200px_200px] place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
+      class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
     >
       <div>
         <img :src="obi" alt="Peter Obi in conversation" />

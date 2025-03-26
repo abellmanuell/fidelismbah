@@ -41,7 +41,7 @@ const socialnetworks = [
 
       <div>
         <RouterLink
-          to="/learn-more"
+          to="/contact-me"
           class="text-sm py-2 px-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white"
         >
           <span> GET IN TOUCH</span>
