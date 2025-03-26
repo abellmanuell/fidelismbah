@@ -7,7 +7,9 @@
     </div>
     <div class="lg:w-[540px]">
       <Heading_2 class-name="text-left text-black" :content="title" />
-      <Paragraph class-name="text-primary-400">
+      <Paragraph
+        class-name="text-primary-400 text-nowrap text-ellipsis overflow-hidden"
+      >
         {{ description }}
       </Paragraph>
       <span class="text-sm text-primary-400 mb-2 block mt-5">{{ date }}</span>

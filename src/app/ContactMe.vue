@@ -1,9 +1,16 @@
 <template>
   <Navigationbar />
-  <section :class="cn('px-5 pt-24 pb-2 lg:pt-30 lg:px-40 ')">
-    <section :class="cn('px-5 py-5 lg:py-10 lg:px-20 lg:flex justify-between')">
+  <section :class="cn('px-5 pt-24 pb-2 lg:pt-30 lg:px-20 ')">
+    <section :class="cn('py-5 lg:py-10 lg:px-20 lg:flex justify-between')">
       <div class="grid lg:grid-cols-2">
-        <div>
+        <div class="bg-primary-500/15 p-10 rounded-md">
+          <div>
+            <Heading_3
+              content="Contact Me"
+              class-name="text-left text-sm text-white inline-block bg-[#3b4b5d] p-2"
+            />
+          </div>
+
           <Heading_3
             content="Let’s Connect and Make History together"
             class-name="text-left"

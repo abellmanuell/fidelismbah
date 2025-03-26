@@ -12,24 +12,30 @@
 
     <div class="my-5">
       <Thumbnail
-        title="Croatian Primer Minister forecast growth for his country"
-        description="Quisque sodales. lacus ac sit diam ipsum vitae quam libero,
-            efficitur. Cras adipiscing lorem. eu cursus Nunc sit nulla, ac
-            placerat"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"
-        date="November 31, 2025"
+        title="Emergency officials struggling to reach #MaiduguriFlood victims"
+        description="Emergency officials in northeast #Nigeria struggling to access flooded areas as thousands trapped in their houses continue to call for help. Fidelis Mbah reports from #Maiduguri"
+        src="https://www.youtube.com/embed/anJqub4vYz0?si=rDk8tQQSY9eOtYhI"
+        date="Sep 15, 2024"
       />
       <Thumbnail
-        title="Croatian Primer Minister forecast growth for his country"
-        description="Quisque sodales. lacus ac sit diam ipsum vitae quam libero,
-            efficitur. Cras adipiscing lorem. eu cursus Nunc sit nulla, ac
-            placerat"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"
-        date="November 31, 2025"
+        title="Nigeria: Gunmen kill at least 113 people in central Plateau state"
+        description="Gunmen have killed more than a hundred people during multiple attacks on about 20 communities in Nigeria’s north central Plateau state. The attackers also burnt down houses and destroyed properties in the area. The west African nation has been faced with increased violence, and kidnappings in recent years. Fidelis Mbah Reports from the capital city, Abuja."
+        src="https://www.youtube.com/embed/EVoYHhkm1WU?si=eL_w7lQzJN-h_ScF"
+        date="Dec 25, 2023"
+      />
+      <Thumbnail
+        title="Nigeria: Buhari Faces Key Challenges after Medical Leave"
+        description="President Muhammadu Buhari faces numerous challenges in Nigeria as he resumes duty after an extended medical leave in the U.K."
+        src="https://www.youtube.com/embed/8sZoybLFeOQ?si=c5Kyu7BNl6czpCtJ"
+        date="Aug 22, 2017"
       />
     </div>
 
-    <LinkButton href="/watch-more-videos">WATCH MORE VIDEOS</LinkButton>
+    <LinkButton
+      href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
+      target="_blank"
+      >WATCH MORE VIDEOS</LinkButton
+    >
 
     <div class="mt-20">
       <div class="my-10">

@@ -56,24 +56,24 @@
   <section :class="cn('pb-32 px-4 lg:px-40')">
     <div class="my-5">
       <Thumbnail
-        title="Croatian Primer Minister forecast growth for his country"
-        description="Quisque sodales. lacus ac sit diam ipsum vitae quam libero,
-            efficitur. Cras adipiscing lorem. eu cursus Nunc sit nulla, ac
-            placerat"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"
-        date="5 July, 2025"
+        title="Eight soldiers killed in Mali attack, army says"
+        description="At least eight soldiers have been killed in western Mali, in what the army describes as a targeted attack. This comes as talks aimed at ending the country's political crisis come to a close. The attack is seen as another setback to any return to civilian rule."
+        src="https://www.youtube.com/embed/eKXN5SINu3s?si=vbBpNLln0z3BES3I"
+        date="Dec 9, 2022"
       />
       <Thumbnail
-        title="Croatian Primer Minister forecast growth for his country"
-        description="Quisque sodales. lacus ac sit diam ipsum vitae quam libero,
-            efficitur. Cras adipiscing lorem. eu cursus Nunc sit nulla, ac
-            placerat"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1"
-        date="5 July, 2025"
+        title="Nigeria labels bandit gangs ‘terrorists’"
+        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        src="https://www.youtube.com/embed/TTPY_TKGnvw?si=T6h-vaWXPCUsDluP"
+        date="Dec 9, 2022"
       />
     </div>
 
-    <LinkButton href="/watch-more-videos">WATCH MORE VIDEOS</LinkButton>
+    <LinkButton
+      href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
+      target="_blank"
+      >WATCH MORE VIDEOS</LinkButton
+    >
   </section>
 
   <LearnMore

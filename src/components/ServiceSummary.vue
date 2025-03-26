@@ -8,18 +8,22 @@ const products = [
   {
     description: "Public Communications",
     icon: "gi-satellite-communication",
+    href: "/services",
   },
   {
     description: "Creative Writing",
     icon: "gi-feather",
+    href: "/creative-writing",
   },
   {
     description: "Video Production",
     icon: "bi-camera-video-fill",
+    href: "/media-production",
   },
   {
     description: "Press Relation",
     icon: "gi-palm-tree",
+    href: "/press-relation",
   },
 ];
 
@@ -126,7 +130,7 @@ const responsiveOptions = ref([
                 </div>
               </div>
               <RouterLink
-                to="/learn-more"
+                :to="slotProps.data.href"
                 class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center absolute -bottom-2"
               >
                 <v-icon name="pr-arrow-up-right" scale="1" />
