@@ -13,7 +13,7 @@ const { content, className } = defineProps({
 </script>
 
 <template>
-  <h4 :class="cn('mb-4 text-center font-semibold text-primary-500', className)">
+  <h4 :class="cn('mb-4 text-center text-xl font-semibold ', className)">
     {{ content }}
   </h4>
 </template>

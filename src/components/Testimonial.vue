@@ -8,7 +8,7 @@
 
     <Carousel
       :value="products"
-      :numVisible="2"
+      :numVisible="3"
       :numScroll="3"
       :responsiveOptions="responsiveOptions"
       :autoplayInterval="3000"

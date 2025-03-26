@@ -25,6 +25,7 @@ import {
   GiSatelliteCommunication,
   GiFeather,
   BiCameraVideoFill,
+  MdVideogameasset,
 } from "oh-vue-icons/icons";
 
 import Home from "@/app/Home.vue";
@@ -33,6 +34,11 @@ import Service from "./app/Service.vue";
 import Projects from "./app/Projects.vue";
 import Blog from "./app/Blog.vue";
 import ContactMe from "./app/ContactMe.vue";
+import PublicCommunication from "./app/services/PublicCommunication.vue";
+import CreativeWriting from "./app/services/CreativeWriting.vue";
+import MediaProduction from "./app/services/MediaProduction.vue";
+import PressRelation from "./app/services/PressRelation.vue";
+import VideoProduction from "./app/services/VideoProduction.vue";
 
 addIcons(
   GiHamburgerMenu,
@@ -49,13 +55,43 @@ addIcons(
   CoFacebook,
   GiSatelliteCommunication,
   GiFeather,
-  BiCameraVideoFill
+  BiCameraVideoFill,
+  MdVideogameasset
 );
 
 const routes = [
   { path: "/", component: Home },
   { path: "/about", component: About },
-  { path: "/services", component: Service },
+  {
+    path: "/services",
+    name: "user-parent",
+    component: Service,
+    children: [
+      {
+        path: "",
+        name: "user",
+        component: PublicCommunication,
+      },
+      {
+        path: "/creative-writing",
+        component: CreativeWriting,
+      },
+
+      {
+        path: "/media-production",
+        component: MediaProduction,
+      },
+
+      {
+        path: "/press-relation",
+        component: PressRelation,
+      },
+      {
+        path: "/video-production",
+        component: VideoProduction,
+      },
+    ],
+  },
   { path: "/projects", component: Projects },
   { path: "/blog", component: Blog },
   { path: "/contact-me", component: ContactMe },

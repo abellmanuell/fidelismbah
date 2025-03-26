@@ -13,7 +13,7 @@
     ></div>
 
     <div class="relative z-20 flex text-white flex-col justify-end">
-      <Paragraph>About</Paragraph>
+      <Paragraph class="text-white">About</Paragraph>
       <Heading_1
         content="Fidelis Mbah"
         class="!text-4xl text-white lg:!text-5xl"
@@ -21,12 +21,12 @@
     </div>
   </section>
 
-  <section class="px-5 lg:px-80 py-20 lg:py-40 bg-primary-500/90 text-white">
-    <Heading_1
+  <section class="px-5 lg:px-80 py-20 lg:py-20 bg-primary-500/90 text-white">
+    <!-- <Heading_1
       content="About Me"
       class="!text-3xl lg:!text-4xl mb-5 text-white"
-    />
-    <Paragraph class="text-white">
+    /> -->
+    <Paragraph class="text-white text-center">
       Fidelis Mbah is an award-winning international journalist with more than
       two decades of reporting and interviewing influential personalities across
       the world.
@@ -35,13 +35,13 @@
       strategist, and brand expert.
     </Paragraph>
     <br />
-    <Paragraph>
+    <Paragraph class="text-white text-center">
       Fidelis is presently a correspondent with Al Jazeera English Television.
       He was recently elected as the deputy President of International Press
       Institute (IPI) Nigeria chapter.
     </Paragraph>
     <br />
-    <Paragraph>
+    <Paragraph class="text-white text-center">
       He has also worked as News Correspondent of the BBC World Service in
       Africa and the U.K. , Africa Deputy Director at CGTN Africa (CCTV News) in
       Kenya, Africa Correspondent at TRTWORLD in Turkey, the Nigeria reporter of
@@ -49,7 +49,7 @@
       network, NBC NEWS.
     </Paragraph>
     <br />
-    <Paragraph>
+    <Paragraph class="text-white text-center">
       In recent years, he has covered elections across several countries, and
       reported political, economic and development news. He has also mentored
       journalists and organises media trainings for media executives and
@@ -62,8 +62,9 @@
       cn(' bg-white h-screen flex items-center justify-center text-center')
     "
   >
-    <div class="w-[400px] space-y-4">
+    <div class="w-[550px] space-y-4">
       <Heading_1
+        class-name="text-3xl"
         content="Collaborate with Brands and Agenciesto create impactful results"
       />
 
@@ -88,30 +89,36 @@
     />
 
     <div
-      class="grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 bg-primary-300 px-4 sm:px-20 py-10 lg:px-40 lg:py-10 gap-10"
+      class="grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 bg-primary-300 px-4 sm:px-20 py-10 lg:px-20 lg:py-10 gap-10"
     >
       <div class="border p-4 flex flex-col items-center justify-center h-80">
-        <Paragraph> sodales. ex. tortor. libero, Nunc </Paragraph>
+        <Paragraph class="text-black text-center">
+          sodales. ex. tortor. libero, Nunc
+        </Paragraph>
         <br />
-        <Paragraph>
+        <Paragraph class="text-black text-center">
           dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
           ultrices ac tempor dolor Ut
         </Paragraph>
       </div>
 
       <div class="border p-4 flex flex-col items-center justify-center h-80">
-        <Paragraph> sodales. ex. tortor. libero, Nunc </Paragraph>
+        <Paragraph class="text-black text-center">
+          sodales. ex. tortor. libero, Nunc
+        </Paragraph>
         <br />
-        <Paragraph>
+        <Paragraph class="text-black text-center">
           dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
           ultrices ac tempor dolor Ut
         </Paragraph>
       </div>
 
       <div class="border p-4 flex flex-col items-center justify-center h-80">
-        <Paragraph> sodales. ex. tortor. libero, Nunc </Paragraph>
+        <Paragraph class="text-black text-center">
+          sodales. ex. tortor. libero, Nunc
+        </Paragraph>
         <br />
-        <Paragraph>
+        <Paragraph class="text-black text-center">
           dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
           ultrices ac tempor dolor Ut
         </Paragraph>
@@ -128,17 +135,17 @@
     />
 
     <div
-      class="bg-primary-500 px-5 py-10 lg:px-40 lg:py-10 bg-[url(/pattern.svg)]"
+      class="bg-primary-500 px-5 py-10 lg:px-20 lg:py-10 bg-[url(/pattern.svg)]"
     >
       <div
-        class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-4 sm:p-10"
+        class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-4 sm:p-6"
       >
         <div v-for="{ src, description } of media" class="border p-4">
           <div>
-            <img :src="src" alt="CCN" class="h-20 w-full" />
+            <img :src="src" alt="CCN" class="h-40 w-[500px] object-cover" />
           </div>
           <br />
-          <Paragraph>
+          <Paragraph class-name="text-center text-xl">
             {{ description }}
           </Paragraph>
         </div>
@@ -148,7 +155,7 @@
 
   <!-- Testimonial component -->
   <Testimonial />
-
+  <!-- 
   <section
     :class="
       cn(
@@ -156,13 +163,13 @@
       )
     "
   >
-    <div>
-      <LearnMore
-        title="Start the conversation that will transform your Story, Brand and Events"
-        :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
-      />
-    </div>
-  </section>
+    <div> -->
+  <LearnMore
+    title="Start the conversation that will transform your Story, Brand and Events"
+    :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
+  />
+  <!-- </div> -->
+  <!-- </section> -->
 
   <!-- Foot component -->
   <Footer />
