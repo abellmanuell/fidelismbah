@@ -61,7 +61,13 @@
           </div>
         </div>
 
-        <div></div>
+        <div class="flex justify-end items-end">
+          <img
+            src="/fidelis-transparancy.png"
+            alt="Contact Me"
+            class="hidden lg:block w-[350px]"
+          />
+        </div>
       </div>
     </section>
   </section>
