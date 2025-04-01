@@ -3,8 +3,7 @@
   <section :class="cn('px-5 py-20 lg:py-40 lg:px-20 ')">
     <HeaderCaption
       title="Explore Our Comprehensive Services Tailored to Your Unique Needs"
-      subTitle="Lorem ipsum dolor sit amet consectetur. Amet diam aliquam ut sem dolor
-        sed enim. Ligula massa vitae adipiscing neque sollicitudin blandit"
+      subTitle="If you’re looking to Report a news event, tell a story or find answers to numerous questions, our services are tailored to Delivering In-Depth Stories and Expert Analysis to Inform and Inspire the general public without fear, favor or bias."
     />
 
     <div class="flex flex-col-reverse lg:grid grid-cols-[200px_auto] gap-x-4">

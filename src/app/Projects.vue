@@ -12,45 +12,55 @@
   </div>
 
   <section
-    :class="cn('px-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:flex justify-between')"
+    :class="cn('px-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:grid lg:grid-cols-2')"
   >
-    <div
-      class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
+    <RouterLink
+      to="https://www.aljazeera.com/news/2024/2/21/qa-nigerian-army-chief-ecowas"
+      class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 py-2 px-4 rounded-md"
     >
       <div>
-        <img :src="obi" alt="Peter Obi in conversation" />
+        <img
+          src="https://www.aljazeera.com/wp-content/uploads/2024/02/2022-12-12T113008Z_379931144_RC2A6X9A2MH5_RTRMADP_3_NIGERIA-MILITARY-CHILDREN-1708513687.jpg?resize=770%2C513&quality=80"
+          alt="Peter Obi in conversation"
+          class="rounded-md"
+        />
       </div>
       <div>
-        <span class="bg-primary-200 px-1">INTERVIEW</span>
+        <span class="bg-primary-200 px-1">NEWS</span>
         <Heading_2
           class-name="text-left"
-          content="Establishing youth innovation foundations across states"
+          content="‘ECOWAS is making efforts to get across to Niger’: Nigerian defence chief"
         />
         <Paragraph>
-          a dive in to this captivating conversation as Fidelis Mbah interview’s
-          Peter Obi, Labor party’s presidential candidate
+          Ahead of an ECOWAS summit in Abuja, the Nigerian general speaks to Al
+          Jazeera about insecurity in West Africa.
         </Paragraph>
       </div>
-    </div>
+    </RouterLink>
 
-    <div
+    <RouterLink
       class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
     >
       <div>
-        <img :src="obi" alt="Peter Obi in conversation" />
+        <img
+          src="https://www.aljazeera.com/wp-content/uploads/2020/12/2016-06-18T120000Z_630071213_D1AETKPXWZAA_RTRMADP_3_NIGERIA-SECURITY-NIGER.jpg?resize=770%2C513&quality=80"
+          alt="Peter Obi in conversation"
+          class="rounded-md"
+        />
       </div>
       <div>
-        <span class="bg-primary-200 px-1">INTERVIEW</span>
+        <span class="bg-primary-200 px-1">NEWS</span>
         <Heading_2
           class-name="text-left"
-          content="Establishing youth innovation foundations across states"
+          content="Children seized. Towns attacked. Can Nigeria fix security crises?"
         />
         <Paragraph>
-          a dive in to this captivating conversation as Fidelis Mbah interview’s
-          Peter Obi, Labor party’s presidential candidate
+          From gangs kidnapping for ransom to armed groups overrunning towns,
+          the government faces a series of security challenges across the
+          country’s increasingly restive north.
         </Paragraph>
       </div>
-    </div>
+    </RouterLink>
   </section>
 
   <section :class="cn('pb-32 px-4 lg:px-40')">
@@ -96,4 +106,5 @@ import HeaderCaption from "../components/HeaderCaption.vue";
 import LinkButton from "../components/LinkButton.vue";
 import Thumbnail from "../components/Thumbnail.vue";
 import LearnMore from "../components/LearnMore.vue";
+import { RouterLink } from "vue-router";
 </script>
