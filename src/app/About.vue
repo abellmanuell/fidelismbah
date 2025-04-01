@@ -4,12 +4,12 @@
     :class="
       cn(
         'relative bg-cover bg-center bg-no-repeat px-5 py-40 lg:px-40 lg:grid grid-cols-2',
-        `bg-[url(/photocolage.svg)] h-screen flex items-end justify-center`
+        `bg-[url(/about-slide-display.png)] h-screen flex items-end justify-center`
       )
     "
   >
     <div
-      class="absolute z-10 inset-0 bg-primary-500/80 lg:bg-primary-500/90"
+      class="absolute z-10 inset-0 bg-primary-500/70 lg:bg-primary-500/70"
     ></div>
 
     <div class="relative z-20 flex text-white flex-col justify-end">
@@ -70,7 +70,7 @@
 
       <div>
         <RouterLink
-          to="/learn-more"
+          to="/contact-me"
           class="text-sm py-2 px-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white"
         >
           <span>LEARN MORE</span>
@@ -80,6 +80,7 @@
     </div>
   </section>
 
+  <!-- 
   <section :class="cn('py-32 lg:px-0')">
     <HeaderCaption
       title="Key achievement and recognition"
@@ -125,7 +126,7 @@
       </div>
     </div>
   </section>
-
+ -->
   <section :class="cn('py-32 lg:px-0')">
     <HeaderCaption
       title="Media Appearance"
@@ -166,7 +167,7 @@
     <div> -->
   <LearnMore
     title="Start the conversation that will transform your Story, Brand and Events"
-    :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
+    :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
   />
   <!-- </div> -->
   <!-- </section> -->

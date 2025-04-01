@@ -109,7 +109,7 @@ const socialnetworks = [
             </li>
 
             <li>
-              <RouterLink to="/contact"> Contact </RouterLink>
+              <RouterLink to="/contact-me"> Contact </RouterLink>
             </li>
           </ul>
         </div>

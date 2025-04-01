@@ -77,7 +77,7 @@
 
   <LearnMore
     title="Collaborate with Brands and Agenciesto create impactful results"
-    :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
+    :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
   />
 
   <!-- Foot component -->
