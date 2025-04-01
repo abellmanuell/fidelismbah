@@ -17,13 +17,7 @@
         <div
           class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4 w-[350px]"
         >
-          <div>
-            <img
-              :src="slotProps.data.src"
-              alt="Fidelis"
-              class="rounded m-auto"
-            />
-          </div>
+          <div></div>
 
           <div class="mt-4">
             <Paragraph class-name="text-center">{{
@@ -53,30 +47,32 @@ const products = [
   {
     src: testimonial,
     description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
-    author: "Fidelis Mbah",
-    designation: "Nigerian Health Watch, Director of Programmes",
+      "“Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction.Fidelis is a word smith and creative explorer, where words come alive”",
+    author: "Don Festus",
+    designation: "The Green Political Foundation Heinrich Böll Foundation",
   },
   {
     src: testimonial1,
     description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
-    author: "Fidelis Mbah",
-    designation: "Nigerian Health Watch, Director of Programmes",
+      "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
+    author: "Stephenie Morgan",
+    designation: "Media Planning Centre for the Right to Health",
   },
   {
     src: testimonial,
     description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
+      "“Fidelis has played as crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today”",
     author: "Fidelis Mbah",
-    designation: "Nigerian Health Watch, Director of Programmes",
+    designation:
+      "Communications Coordinator Development Partnership International",
   },
   {
     src: testimonial,
     description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
-    author: "Fidelis Mbah",
-    designation: "Nigerian Health Watch, Director of Programmes",
+      "“I have seen Fidelis’ fruition and how he receives positive feedback and credibility from clients and audiencesthat is incredibly fulfilling”",
+    author: "Don Fetus",
+    designation:
+      "Deputy President (Nigeria) International Press Institute (IPI)",
   },
 ];
 

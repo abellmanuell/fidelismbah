@@ -4,6 +4,7 @@ import Paragraph from "../components/basket/Paragraph.vue";
 import { cn } from "../utils/cn";
 import { RouterLink } from "vue-router";
 import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
+import profilephoto from "../assets/profilephoto.png";
 
 const socialnetworks = [
   { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
@@ -84,6 +85,12 @@ const socialnetworks = [
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+
+    <div class="relative">
+      <div class="absolute z-10 -bottom-40">
+        <img :src="profilephoto" alt="Contact Me" class="hidden lg:block" />
       </div>
     </div>
   </section>

@@ -61,12 +61,18 @@
           </div>
         </div>
 
-        <div class="flex justify-end items-end">
-          <img
-            src="/fidelis-transparancy.png"
-            alt="Contact Me"
-            class="hidden lg:block w-[350px]"
-          />
+        <div class="flex flex-col justify-center items-center">
+          <div>
+            <img :src="profilephoto" alt="Contact Me" class="hidden lg:block" />
+          </div>
+
+          <ul class="flex space-x-4">
+            <li v-for="social of socialnetworks">
+              <a :href="social.href">
+                <v-icon :name="social.icon" scale="1" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -89,4 +95,22 @@ import Paragraph from "../components/basket/Paragraph.vue";
 import { cn } from "../utils/cn";
 import Footer from "../components/basket/Footer.vue";
 import LearnMore from "../components/LearnMore.vue";
+import profilephoto from "../assets/profilephoto.png";
+
+const socialnetworks = [
+  { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
+  {
+    icon: "pr-linkedin",
+    href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",
+  },
+  { icon: "co-facebook", href: "#" },
+  {
+    icon: "bi-youtube",
+    href: "https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber",
+  },
+  {
+    icon: "bi-instagram",
+    href: "https://www.instagram.com/fidelismbah/?hl=en",
+  },
+];
 </script>

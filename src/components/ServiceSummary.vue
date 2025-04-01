@@ -9,21 +9,27 @@ const products = [
     description: "Public Communications",
     icon: "gi-satellite-communication",
     href: "/services",
+    bg_img: "fidelis1.jpg",
   },
   {
     description: "Creative Writing",
     icon: "gi-feather",
     href: "/creative-writing",
+    bg_img: "fidelis1.jpg",
+
+    bg_img: "creative-writing.jpg",
   },
   {
     description: "Video Production",
     icon: "bi-camera-video-fill",
     href: "/media-production",
+    bg_img: "video-production.jpg",
   },
   {
     description: "Press Relation",
     icon: "gi-palm-tree",
     href: "/press-relation",
+    bg_img: "press-relation.jpg",
   },
 ];
 
@@ -40,7 +46,7 @@ const responsiveOptions = ref([
   },
   {
     breakpoint: "767px",
-    numVisible: 2,
+    numVisible: 1,
     numScroll: 1,
   },
   {
@@ -107,81 +113,44 @@ const responsiveOptions = ref([
       >
         <Carousel
           :value="products"
-          :numVisible="3"
-          :numScroll="3"
           :responsiveOptions="responsiveOptions"
           :autoplayInterval="3000"
-          class="h-full"
+          class="h-full w-[400px] lg:w-full"
         >
           <template #item="slotProps">
             <div
-              class="border-surface-200 dark:border-surface-700 m-2 p-6 border border-primary-500 flex justify-center items-center flex-co relative"
+              :style="{ backgroundImage: `url(${slotProps.data.bg_img})` }"
+              :class="
+                cn(
+                  'rounded-md border-surface-200 dark:border-surface-700 m-2 p-6 border border-primary-500 flex justify-center items-center flex-co relative',
+                  `relative bg-cover bg-center bg-no-repeat`
+                )
+              "
             >
               <div
-                class="flex justify-center items-center flex-col min-h-[300px] space-y-2"
+                class="absolute inset-0 bg-primary-500/80 lg:bg-primary-500/80"
+              ></div>
+              <div
+                class="flex justify-center items-center flex-col min-h-[300px] space-y-2 z-100 text-white"
               >
                 <span>
                   <v-icon :name="slotProps.data.icon" scale="2" />
                 </span>
                 <div>
-                  <Paragraph class-name="text-center  font-bold">{{
+                  <Paragraph class-name="text-center  font-bold text-white">{{
                     slotProps.data.description
                   }}</Paragraph>
                 </div>
               </div>
               <RouterLink
                 :to="slotProps.data.href"
-                class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center absolute -bottom-2"
+                class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center absolute -bottom-2 border-2 border-white shadow-md"
               >
                 <v-icon name="pr-arrow-up-right" scale="1" />
               </RouterLink>
             </div>
           </template>
         </Carousel>
-        <!-- 
-        <div
-          class="relative border rounded-md border-primary-500 px-4 py-20 flex flex-col items-center"
-        >
-          <span>
-            <v-icon name="fa-regular-handshake" scale="3" />
-          </span>
-          <Paragraph class="text-center my-4">
-            Public Communications
-          </Paragraph>
-          <span
-            class="bg-primary-500 rounded-full inline-block text-white p-1 absolute -bottom-5"
-          >
-            <v-icon name="pr-arrow-up-right" scale="1.5" />
-          </span>
-        </div>
-
-        <div
-          class="relative border rounded-md border-primary-500 px-4 py-20 flex flex-col items-center"
-        >
-          <span>
-            <v-icon name="px-trending" scale="3" />
-          </span>
-          <Paragraph class="text-center my-4"> Creative Writing </Paragraph>
-          <span
-            class="bg-primary-500 rounded-full inline-block text-white p-1 absolute -bottom-5"
-          >
-            <v-icon name="pr-arrow-up-right" scale="1.5" />
-          </span>
-        </div>
-
-        <div
-          class="relative border rounded-md border-primary-500 px-4 py-20 flex flex-col items-center"
-        >
-          <span>
-            <v-icon name="gi-palm-tree" scale="3" />
-          </span>
-          <Paragraph class="text-center my-4"> Media Production </Paragraph>
-          <span
-            class="bg-primary-500 rounded-full inline-block text-white p-1 absolute -bottom-5"
-          >
-            <v-icon name="pr-arrow-up-right" scale="1.5" />
-          </span>
-        </div> -->
       </div>
     </div>
   </section>
