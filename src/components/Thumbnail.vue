@@ -7,10 +7,10 @@
     </div>
     <div class="lg:w-[540px]">
       <Heading_2 class-name="text-left text-black" :content="title" />
+      <span class="text-sm text-primary-400 mb-2 block">{{ date }}</span>
       <Paragraph>
         {{ description }}
       </Paragraph>
-      <span class="text-sm text-primary-400 mb-2 block">{{ date }}</span>
       <div>
         <slot />
       </div>

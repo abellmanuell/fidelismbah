@@ -69,7 +69,7 @@ const socialnetworks = [
 
       <div>
         <RouterLink
-          to="/learn-more"
+          to="/about"
           class="text-sm py-3 px-6 border border-white rounded-full font-bold text-white hover:bg-primary-500 transition-all"
         >
           <span> LEARN MORE </span>
