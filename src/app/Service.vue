@@ -29,7 +29,7 @@
   <section>
     <LearnMore
       title="Start the conversation that will transform your Story, Brand and Events"
-      :linkProps="{ name: 'LEARN MORE', href: '/learn-more' }"
+      :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
     />
   </section>
 
