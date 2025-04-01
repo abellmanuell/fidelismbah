@@ -1,16 +1,16 @@
 <template>
   <div
-    class="grid lg:grid-cols-[300px_auto] border-b py-2 gap-x-4 items-center space-y-4 lg:space-y-0"
+    class="grid lg:grid-cols-[300px_auto] border-t py-1 gap-x-4 items-center space-y-4 lg:space-y-0"
   >
-    <div>
+    <div class="flex justify-center items-center lg:block">
       <iframe :src="src"> </iframe>
     </div>
     <div class="lg:w-[540px]">
       <Heading_2 class-name="text-left text-black" :content="title" />
-      <Paragraph class-name="text-primary-400 text-ellipsis overflow-hidden">
+      <Paragraph>
         {{ description }}
       </Paragraph>
-      <span class="text-sm text-primary-400 mb-2 block mt-5">{{ date }}</span>
+      <span class="text-sm text-primary-400 mb-2 block">{{ date }}</span>
       <div>
         <slot />
       </div>

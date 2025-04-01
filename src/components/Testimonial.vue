@@ -1,5 +1,5 @@
 <template>
-  <section :class="cn('py-32 px-4 lg:px-40')">
+  <section :class="cn('py-20 px-4 lg:pt-20 lg:pb-10')">
     <HeaderCaption
       title="Client Testimonial"
       subTitle="Words from client’s who have experienced the value of my Journalism
@@ -15,7 +15,7 @@
     >
       <template #item="slotProps">
         <div
-          class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4 w-[350px]"
+          class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4 h-[250px] flex justify-center items-center flex-col"
         >
           <div></div>
 
@@ -45,13 +45,6 @@ import { cn } from "../utils/cn";
 import HeaderCaption from "./HeaderCaption.vue";
 const products = [
   {
-    src: testimonial,
-    description:
-      "“Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction.Fidelis is a word smith and creative explorer, where words come alive”",
-    author: "Don Festus",
-    designation: "The Green Political Foundation Heinrich Böll Foundation",
-  },
-  {
     src: testimonial1,
     description:
       "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
@@ -73,6 +66,13 @@ const products = [
     author: "Don Fetus",
     designation:
       "Deputy President (Nigeria) International Press Institute (IPI)",
+  },
+  {
+    src: testimonial,
+    description:
+      "“Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction.Fidelis is a word smith and creative explorer, where words come alive”",
+    author: "Don Festus",
+    designation: "The Green Political Foundation Heinrich Böll Foundation",
   },
 ];
 

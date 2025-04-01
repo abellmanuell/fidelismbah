@@ -1,5 +1,5 @@
 <template>
-  <section :class="cn('py-32 px-4 lg:px-40')">
+  <section :class="cn('py-20 px-4 lg:px-40')">
     <HeaderCaption
       title="Blog and Media"
       subTitle="Where Journalism meets perspective: My insight, analysis and commentary
@@ -19,7 +19,7 @@
       />
       <Thumbnail
         title="Nigeria: Gunmen kill at least 113 people in central Plateau state"
-        description="Gunmen have killed more than a hundred people during multiple attacks on about 20 communities in Nigeria’s north central Plateau state. The attackers also burnt down houses and destroyed properties in the area. The west African nation has been faced with increased violence, and kidnappings in recent years. Fidelis Mbah Reports from the capital city, Abuja."
+        description="Gunmen have killed more than a hundred people during multiple attacks on about 20 communities in Nigeria’s north central Plateau state..."
         src="https://www.youtube.com/embed/EVoYHhkm1WU?si=eL_w7lQzJN-h_ScF"
         date="Dec 25, 2023"
       />
@@ -39,7 +39,7 @@
 
     <div class="mt-20">
       <div class="my-10">
-        <Paragraph class-name="font-bold"> My latest blogs </Paragraph>
+        <Paragraph class-name="font-bold"> Other updates </Paragraph>
       </div>
 
       <Carousel
@@ -50,7 +50,7 @@
       >
         <template #item="slotProps">
           <div
-            class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4"
+            class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4 flex items-center justify-center flex-col space-y-4"
           >
             <div>
               <img :src="slotProps.data.src" alt="Fidelis" class="rounded" />
@@ -61,14 +61,12 @@
                 slotProps.data.description
               }}</Paragraph>
             </div>
-            <hr class="my-4 text-primary-200" />
-            <div class="text-center text-sm">
-              <Heading_2
-                class-name="!text-sm"
-                :content="slotProps.data.author"
-              />
-              <i class="text-primary-400">{{ slotProps.data.designation }}</i>
-            </div>
+            <a
+              :href="slotProps.data.href"
+              class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center -bottom-2"
+            >
+              <v-icon name="pr-arrow-up-right" scale="1" />
+            </a>
           </div>
         </template>
       </Carousel>
@@ -85,6 +83,7 @@ import { ref } from "vue";
 import HeaderCaption from "./HeaderCaption.vue";
 import Thumbnail from "./Thumbnail.vue";
 import LinkButton from "./LinkButton.vue";
+import { RouterLink } from "vue-router";
 
 const responsiveOptions = ref([
   {
@@ -111,25 +110,34 @@ const responsiveOptions = ref([
 
 const products = [
   {
-    src: testimonial,
+    src: "https://www.aljazeera.com/wp-content/uploads/2020/12/000_8WF7Q7.jpg?resize=770%2C513&quality=80",
     description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
+      "Old rivals square up again in Ghana’s tight presidential election",
     author: "Fidelis Mbah",
     designation: "Nigerian Health Watch, Director of Programmes",
+    href: "https://www.aljazeera.com/news/2020/12/5/old-rivals-square-up-again-in-ghanas-tight-presidential-election",
   },
   {
-    src: testimonial,
+    src: "https://www.aljazeera.com/wp-content/uploads/2020/11/AP_20334577600389.jpg?resize=770%2C513&quality=80",
     description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
+      "‘Unrelenting’ insecurity: Nigeria reels after massacre of farmers",
     author: "Fidelis Mbah",
     designation: "Nigerian Health Watch, Director of Programmes",
+    href: "https://www.aljazeera.com/news/2020/11/30/unrelenting-insecurity-nigeria-reels-after-attack",
   },
   {
-    src: testimonial,
-    description:
-      "id id sapien dui Sed dignissim, Morbi varius vitae non.tincidunt Lorem sit elit amet, lacus tincidunt ex. ullaat dui at vitae Sed nisl. dolor efficitur. nisi ipsum elit lacus",
+    src: "https://www.aljazeera.com/wp-content/uploads/2020/10/h_56421256.jpg?resize=770%2C513&quality=80",
+    description: "Inquiry probes shooting of Lagos protesters, police abuses",
     author: "Fidelis Mbah",
     designation: "Nigerian Health Watch, Director of Programmes",
+    href: "https://www.aljazeera.com/news/2020/10/26/judicial-inquiry-begin-in-lagos-to-probe-police-brutality",
+  },
+  {
+    src: "https://www.aljazeera.com/wp-content/uploads/2020/12/image-45.jpg?resize=730%2C410&quality=80",
+    description: "Nigeria steps up efforts to rescue 300 abducted pupils: Live",
+    author: "Fidelis Mbah",
+    designation: "Nigeria steps up efforts to rescue 300 abducted pupils: Live",
+    href: "https://www.aljazeera.com/news/2020/12/14/nigeria-steps-up-rescue-efforts-for-300-abducted-pupils-live",
   },
 ];
 </script>
