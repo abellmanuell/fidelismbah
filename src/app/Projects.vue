@@ -39,6 +39,7 @@
     </RouterLink>
 
     <RouterLink
+      to="https://www.aljazeera.com/news/2021/3/2/children-seized-towns-attacked-can-nigeria-fix-security-crises"
       class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
     >
       <div>

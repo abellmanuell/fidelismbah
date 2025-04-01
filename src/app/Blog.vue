@@ -10,17 +10,17 @@
   <section :class="cn('px-5 py-5 lg:py-10 lg:px-40 lg:flex justify-between')">
     <article class="grid lg:grid-cols-2 gap-x-14 gap-y-4">
       <ArticlePost
-        :src="obi"
-        date="November 23, 2024"
-        title="My Vision for storytelling in Africa"
-        href="#"
+        src="https://www.aljazeera.com/wp-content/uploads/2020/10/2020-10-23T101603Z_638432546_RC29OJ9R5MMB_RTRMADP_3_NIGERIA-PROTESTS.jpg?resize=770%2C513&quality=80"
+        date="25 Oct 2020"
+        title="Nigeria seeks to halt looting amid fury over ‘food warehouses’"
+        href="https://www.aljazeera.com/news/2020/10/25/nigeria-cracks-down-on-rising-mob-looting-on-food-warehouses"
       />
 
       <ArticlePost
-        :src="obi"
-        date="November 23, 2024"
-        title="My Vision for storytelling in Africa"
-        href="#"
+        src="https://www.aljazeera.com/wp-content/uploads/2020/10/RTX847M0-1.jpg?resize=770%2C513&quality=80"
+        date="24 Oct 2020"
+        title="SARS protests: Tense calm in Nigeria after days of unrest"
+        href="https://www.aljazeera.com/news/2020/10/24/calm-returns-to-nigeria-cities-after-unrest"
       />
     </article>
   </section>
@@ -38,7 +38,7 @@
     />
     <Thumbnail
       title="Nigeria: Gunmen kill at least 113 people in central Plateau state"
-      description="Gunmen have killed more than a hundred people during multiple attacks on about 20 communities in Nigeria’s north central Plateau state. The attackers also burnt down houses and destroyed properties in the area. The west African nation has been faced with increased violence, and kidnappings in recent years. Fidelis Mbah Reports from the capital city, Abuja."
+      description="Gunmen have killed more than a hundred people during multiple attacks on about 20 communities in Nigeria’s north central Plateau state. The attackers also burnt down houses and destroyed properties in the area. "
       src="https://www.youtube.com/embed/EVoYHhkm1WU?si=eL_w7lQzJN-h_ScF"
       date="Dec 25, 2023"
     />
