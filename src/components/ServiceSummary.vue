@@ -36,7 +36,7 @@ const products = [
 const responsiveOptions = ref([
   {
     breakpoint: "1400px",
-    numVisible: 3,
+    numVisible: 2,
     numScroll: 1,
   },
   {
@@ -46,7 +46,7 @@ const responsiveOptions = ref([
   },
   {
     breakpoint: "767px",
-    numVisible: 1,
+    numVisible: 2,
     numScroll: 1,
   },
   {
@@ -109,20 +109,22 @@ const responsiveOptions = ref([
       </div>
 
       <div
-        class="bg-white text-primary-500 p-4 space-y-10 lg:space-y-0 lg:col-span-2 lg:col-start-2 lg:flex rounded-md gap-x-4 h-full"
+        class="bg-white text-primary-500 p-2 space-y-10 lg:space-y-0 lg:col-span-2 lg:col-start-2 lg:flex rounded-md gap-x-2 h-full"
       >
         <Carousel
           :value="products"
           :responsiveOptions="responsiveOptions"
           :autoplayInterval="3000"
-          class="h-full w-[400px] lg:w-full"
+          :numVisible="3"
+          :numScroll="1"
+          class="h-full w-[280px] sm:w-[320px] md:w-full"
         >
           <template #item="slotProps">
             <div
               :style="{ backgroundImage: `url(${slotProps.data.bg_img})` }"
               :class="
                 cn(
-                  'rounded-md border-surface-200 dark:border-surface-700 m-2 p-6 border border-primary-500 flex justify-center items-center flex-co relative',
+                  'rounded-md border-surface-200 dark:border-surface-700 mb-2 border md:m-2 md:p-6  flex justify-center items-center flex-col relative',
                   `relative bg-cover bg-center bg-no-repeat`
                 )
               "
@@ -130,6 +132,7 @@ const responsiveOptions = ref([
               <div
                 class="absolute inset-0 bg-primary-500/80 lg:bg-primary-500/80"
               ></div>
+
               <div
                 class="flex justify-center items-center flex-col min-h-[300px] space-y-2 z-100 text-white"
               >
