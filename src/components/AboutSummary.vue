@@ -19,14 +19,14 @@ import HeaderCaption from "./HeaderCaption.vue";
     />
 
     <div
-      class="grid space-y-16 lg:space-y-0 lg:grid-cols-2 place-items-center gap-10"
+      class="grid space-y-16 lg:space-y-0 lg:grid-cols-2 place-items-center gap-4"
     >
       <div>
-        <div class="grid grid-cols-4 gap-2">
-          <img :src="ap1" alt="ap1" class="h-full" />
-          <img :src="ap2" alt="ap2" class="h-full" />
-          <img :src="ap3" alt="ap2" class="h-full" />
-          <img :src="ap4" alt="ap2" class="h-full" />
+        <div class="grid grid-cols-4 gap-2 place-items-center">
+          <img :src="ap1" alt="ap1" class="block h-full mr-1" />
+          <img :src="ap4" alt="ap2" class="block h-full" />
+          <img :src="ap3" alt="ap2" class="block h-full" />
+          <img :src="ap2" alt="ap2" class="block h-full" />
         </div>
       </div>
 
@@ -56,7 +56,7 @@ import HeaderCaption from "./HeaderCaption.vue";
         <br />
         <div>
           <RouterLink
-            to="/learn-more"
+            to="/about"
             class="text-sm py-3 px-6 border border-primary-500 rounded-full font-bold text-primary-500 hover:text-white hover:bg-primary-500 transition-all"
           >
             <span> Experience Fidelis’ Journey </span>

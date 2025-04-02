@@ -15,7 +15,7 @@ const { content, className } = defineProps({
 <template>
   <h2
     :class="
-      cn('mb-2 text-center text-xl font-semibold text-primary-500', className)
+      cn('mb-2 text-center text-2xl font-semibold text-primary-500', className)
     "
   >
     {{ content }}
