@@ -1,23 +1,22 @@
 <template>
   <Navigationbar />
   <section
-    :class="
-      cn(
-        'relative bg-cover bg-center bg-no-repeat px-5 py-40 lg:px-40 lg:grid grid-cols-2',
-        `bg-[url(/about-slide-display.png)] h-screen flex items-end justify-center`
-      )
-    "
+    class="relative bg-cover bg-center bg-no-repeat px-5 pt-40 lg:px-40 lg:grid bg-[url(/about-slide-display.png)] h-screen flex items-end justify-center"
   >
     <div
       class="absolute z-10 inset-0 bg-primary-500/70 lg:bg-primary-500/70"
     ></div>
 
-    <div class="relative z-20 flex text-white flex-col justify-end">
-      <Paragraph class="text-white">About</Paragraph>
-      <Heading_1
+    <div class="relative z-20 flex text-white flex-col justify-center bottom-0">
+      <!-- <Paragraph class="text-white">About</Paragraph> -->
+      <!-- <Heading_1
         content="Fidelis Mbah"
         class="!text-4xl text-white lg:!text-5xl"
-      />
+      /> -->
+      <h1 class="text-white text-6xl font-semibold text-center leading-12">
+        Fidelis <br />
+        Mbah
+      </h1>
     </div>
   </section>
 
@@ -58,9 +57,7 @@
   </section>
 
   <section
-    :class="
-      cn(' bg-white h-screen flex items-center justify-center text-center')
-    "
+    class="bg-white h-screen flex items-center justify-center text-center"
   >
     <div class="w-[550px] space-y-4">
       <Heading_1
@@ -80,59 +77,11 @@
     </div>
   </section>
 
-  <!-- 
-  <section :class="cn('py-32 lg:px-0')">
-    <HeaderCaption
-      title="Key achievement and recognition"
-      subTitle="
-        Recognition for commitment to truth and storytelling, highlighting
-        exceptional reporting in the field of Journalism."
-    />
-
-    <div
-      class="grid lg:grid-cols-3 grid-rows-3 lg:grid-rows-1 bg-primary-300 px-4 sm:px-20 py-10 lg:px-20 lg:py-10 gap-10"
-    >
-      <div class="border p-4 flex flex-col items-center justify-center h-80">
-        <Paragraph class="text-black text-center">
-          sodales. ex. tortor. libero, Nunc
-        </Paragraph>
-        <br />
-        <Paragraph class="text-black text-center">
-          dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-          ultrices ac tempor dolor Ut
-        </Paragraph>
-      </div>
-
-      <div class="border p-4 flex flex-col items-center justify-center h-80">
-        <Paragraph class="text-black text-center">
-          sodales. ex. tortor. libero, Nunc
-        </Paragraph>
-        <br />
-        <Paragraph class="text-black text-center">
-          dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-          ultrices ac tempor dolor Ut
-        </Paragraph>
-      </div>
-
-      <div class="border p-4 flex flex-col items-center justify-center h-80">
-        <Paragraph class="text-black text-center">
-          sodales. ex. tortor. libero, Nunc
-        </Paragraph>
-        <br />
-        <Paragraph class="text-black text-center">
-          dolor non. ex ipsum quam sollicitudin. Nunc ipsum amet, In luctus
-          ultrices ac tempor dolor Ut
-        </Paragraph>
-      </div>
-    </div>
-  </section>
- -->
-  <section :class="cn('py-32 lg:px-0')">
+  <section class="py-32 lg:px-0">
     <HeaderCaption
       title="Media Appearance"
       subTitle="
-        Words from client’s who have experienced the value of my Journalism
-        skills, work ethic and collaborative spirit"
+        A journey of impact across leading media outlets"
     />
 
     <div
@@ -143,10 +92,10 @@
       >
         <div v-for="{ src, description } of media" class="border p-4">
           <div>
-            <img :src="src" alt="CCN" class="h-40 w-[500px] object-cover" />
+            <img :src="src" :alt="description" class="w-[500px] object-cover" />
           </div>
           <br />
-          <Paragraph class-name="text-center text-xl">
+          <Paragraph class-name="text-center text-sm">
             {{ description }}
           </Paragraph>
         </div>
@@ -155,22 +104,14 @@
   </section>
 
   <!-- Testimonial component -->
-  <Testimonial />
-  <!-- 
-  <section
-    :class="
-      cn(
-        ' bg-primary-200 h-screen flex items-center justify-center text-center'
-      )
-    "
-  >
-    <div> -->
+  <div class="pb-10 md:pb-40">
+    <Testimonial />
+  </div>
+
   <LearnMore
     title="Start the conversation that will transform your Story, Brand and Events"
     :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
   />
-  <!-- </div> -->
-  <!-- </section> -->
 
   <!-- Foot component -->
   <Footer />
