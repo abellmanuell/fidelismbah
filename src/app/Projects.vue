@@ -1,67 +1,90 @@
 <template>
   <Navigationbar />
-  <section :class="cn('px-5 py-20 lg:pt-40 lg:px-40 ')">
+  <section class="px-5 pt-40 pb-0 lg:pt-40 lg:px-40">
     <HeaderCaption
       title="Projects and appearances"
       subTitle="Defining moments and transformative projects that inspire change"
     />
   </section>
 
-  <div class="mb-10">
+  <div class="mb-5 md:mb-10">
     <img :src="project_image" alt="Project Image" class="w-full" />
   </div>
 
   <section
-    :class="cn('px-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:grid lg:grid-cols-2')"
+    class="px-5 sm:pt-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:grid lg:grid-cols-2 gap-2"
   >
-    <RouterLink
-      to="https://www.aljazeera.com/news/2024/2/21/qa-nigerian-army-chief-ecowas"
-      class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 py-2 px-4 rounded-md"
-    >
+    <div class="grid lg:grid-cols-2 items-center gap-10 py-2 rounded-md">
       <div>
-        <img
+        <!-- <img
           src="https://www.aljazeera.com/wp-content/uploads/2024/02/2022-12-12T113008Z_379931144_RC2A6X9A2MH5_RTRMADP_3_NIGERIA-MILITARY-CHILDREN-1708513687.jpg?resize=770%2C513&quality=80"
           alt="Peter Obi in conversation"
           class="rounded-md"
-        />
+        /> -->
+        <iframe
+          src="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
+          class="h-[200px] w-full lg:w-auto rounded-md"
+        >
+        </iframe>
       </div>
       <div>
-        <span class="bg-primary-200 px-1">NEWS</span>
+        <!-- <span class="bg-primary-200 px-1">NEWS</span> -->
         <Heading_2
-          class-name="text-left"
-          content="‘ECOWAS is making efforts to get across to Niger’: Nigerian defence chief"
+          class-name="text-left text-xl mb-4"
+          content="Kenya Elections: Fake Social Media Reports Target Voters"
         />
-        <Paragraph>
-          Ahead of an ECOWAS summit in Abuja, the Nigerian general speaks to Al
-          Jazeera about insecurity in West Africa.
+        <Paragraph class="text-sm">
+          Social media has played a major role in the lead up to Kenya
+          elections...
         </Paragraph>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
+          class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block"
+        >
+          <span> WATCH VIDEO </span>
+          <v-icon name="pr-arrow-up-right" scale="1" />
+        </a>
       </div>
-    </RouterLink>
+    </div>
 
-    <RouterLink
-      to="https://www.aljazeera.com/news/2021/3/2/children-seized-towns-attacked-can-nigeria-fix-security-crises"
-      class="grid lg:grid-cols-2 place-items-center gap-5 lg:space-y-4 lg:px-4 py-4 lg:py-0"
+    <div
+      class="grid lg:grid-cols-2 items-center justify-center gap-10 py-2 rounded-md"
     >
       <div>
-        <img
+        <!-- <img
           src="https://www.aljazeera.com/wp-content/uploads/2020/12/2016-06-18T120000Z_630071213_D1AETKPXWZAA_RTRMADP_3_NIGERIA-SECURITY-NIGER.jpg?resize=770%2C513&quality=80"
           alt="Peter Obi in conversation"
           class="rounded-md"
-        />
+        /> -->
+        <iframe
+          src="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
+          class="h-[200px] rounded-md w-full lg:w-auto"
+        >
+        </iframe>
       </div>
+
       <div>
-        <span class="bg-primary-200 px-1">NEWS</span>
+        <!-- <span class="bg-primary-200 px-1">NEWS</span> -->
         <Heading_2
-          class-name="text-left"
-          content="Children seized. Towns attacked. Can Nigeria fix security crises?"
+          class-name="text-left text-xl mb-4"
+          content="Fears of Political Violence Haunt Kenyan Citizens"
         />
-        <Paragraph>
-          From gangs kidnapping for ransom to armed groups overrunning towns,
-          the government faces a series of security challenges across the
-          country’s increasingly restive north.
+        <Paragraph class="text-sm">
+          Kenyans go to the polls on Tuesday to elect a president and
+          parliament...
         </Paragraph>
+
+        <a
+          target="_blank"
+          href="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
+          class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block"
+        >
+          <span> WATCH VIDEO </span>
+          <v-icon name="pr-arrow-up-right" scale="1" />
+        </a>
       </div>
-    </RouterLink>
+    </div>
   </section>
 
   <section :class="cn('pb-32 px-4 lg:px-40')">
@@ -76,6 +99,27 @@
         title="Nigeria labels bandit gangs ‘terrorists’"
         description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
         src="https://www.youtube.com/embed/TTPY_TKGnvw?si=T6h-vaWXPCUsDluP"
+        date="Dec 9, 2022"
+      />
+
+      <Thumbnail
+        title="UN to Close Five Peacekeeping Bases in D.R Congo"
+        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        src="https://www.youtube.com/embed/b-l39-21r-Q?si=xftZwlP6CXjBR2fY"
+        date="31 Jul 2017"
+      />
+
+      <Thumbnail
+        title="Growing Biker Culture Draws South African Women"
+        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        src="https://www.youtube.com/embed/MajeaW1ar1o?si=A8jJUAL0IZVOhyxW"
+        date="29 Jul 2017"
+      />
+
+      <Thumbnail
+        title="Liberia Marks 170 Years of Independence"
+        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        src="https://www.youtube.com/embed/0GFAoast3Hw?si=EQUsakRkdfjvKTeo"
         date="Dec 9, 2022"
       />
     </div>
@@ -102,7 +146,6 @@ import { cn } from "../utils/cn";
 import Navigationbar from "../components/basket/Navigationbar.vue";
 import Footer from "../components/basket/Footer.vue";
 import project_image from "@/assets/project-image.png";
-import obi from "@/assets/obi.png";
 import HeaderCaption from "../components/HeaderCaption.vue";
 import LinkButton from "../components/LinkButton.vue";
 import Thumbnail from "../components/Thumbnail.vue";

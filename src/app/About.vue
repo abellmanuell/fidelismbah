@@ -121,7 +121,6 @@
 import { RouterLink } from "vue-router";
 import Paragraph from "../components/basket/Paragraph.vue";
 import Heading_1 from "../components/basket/Heading_1.vue";
-import { cn } from "../utils/cn";
 import Navigationbar from "../components/basket/Navigationbar.vue";
 import Footer from "../components/basket/Footer.vue";
 import Testimonial from "../components/Testimonial.vue";
