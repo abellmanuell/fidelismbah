@@ -1,18 +1,21 @@
 <template>
   <Carousel :items-to-show="1" :wrap-around="true" :autoplay="3000">
     <Slide v-for="(item, index) in items" :key="index">
-      <div class="carousel-item space-x-5">
-        <img :src="item.image" alt="Carousel Image" class="image" />
+      <div class="carousel-item">
+        <div>
+          <iframe :src="item.src" class="image"> </iframe>
+        </div>
+
         <div class="content">
-          <h4 class="tag">{{ item.tag }}</h4>
+          <!-- <h4 class="tag">{{ item.tag }}</h4> -->
           <h2 class="title">{{ item.title }}</h2>
           <p class="description">{{ item.description }}</p>
           <a
             target="_blank"
-            :href="item.href"
+            :href="item.src"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block"
           >
-            <span> LEARN MORE </span>
+            <span> WATCH VIDEO </span>
             <v-icon name="pr-arrow-up-right" scale="1" />
           </a>
         </div>
@@ -30,9 +33,6 @@
 import { defineComponent } from "vue";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import "vue3-carousel/carousel.css"; // Import styles
-import obi from "@/assets/obi.png";
-import LinkButton from "./LinkButton.vue";
-import { RouterLink } from "vue-router";
 
 export default defineComponent({
   components: { Carousel, Slide, Pagination, Navigation },
@@ -40,52 +40,33 @@ export default defineComponent({
     return {
       items: [
         {
-          image:
-            "https://www.aljazeera.com/wp-content/uploads/2024/12/AP582079694182-1734542186.jpg?resize=770%2C513&quality=80",
+          src: "https://www.youtube.com/embed/DrOMxcb5vTw?si=O8gQSh01HYHZR_Ga",
           tag: "NEWS",
-          title:
-            "In Nigeria’s crude capital, a plan to win the war against oil theft",
+          title: "Emergency officials evacuate Maiduguri flood victims",
           description:
-            "Through improved security measures, including gunboats, authorities in Rivers State hope to stop criminals and improve production.",
-          href: "https://www.aljazeera.com/news/2024/12/19/in-nigerias-crude-capital-a-plan-to-win-the-war-against-oil-theft",
+            "Emergency workers step up rescue efforts to evacuate thousands trapped in their homes after flood waters swept across #Maiduguri in northeast #Nigeria. Fidelis Mbah has more.",
         },
         {
-          image:
-            "https://www.aljazeera.com/wp-content/uploads/2024/02/2022-12-12T113008Z_379931144_RC2A6X9A2MH5_RTRMADP_3_NIGERIA-MILITARY-CHILDREN-1708513687.jpg?resize=770%2C513&quality=80",
+          src: "https://www.youtube.com/embed/0sRnn2ZtWR4",
           tag: "NEWS",
-          title:
-            "‘ECOWAS is making efforts to get across to Niger’: Nigerian defence chief",
+          title: "Nigeria investigates military drone attacks on villagers.",
           description:
-            "Ahead of an ECOWAS summit in Abuja, the Nigerian general speaks to Al Jazeera about insecurity in West Africa.",
-          href: "https://www.aljazeera.com/news/2024/2/21/qa-nigerian-army-chief-ecowas",
+            "Nigeria’s army has admitted to making a mistake after a drone strike hit worshippers gathered to mark an important Muslim holiday event in northwest Kaduna state. Atleast 85 were killed during the attack. Fidelis Mbah visited Tudun Biri village and now reports.",
         },
         {
-          image:
-            "https://www.aljazeera.com/wp-content/uploads/2023/01/2010-03-16T120000Z_1108022299_BM2E63G0VVV01_RTRMADP_3_OPEC.jpg?resize=770%2C513&quality=80",
+          src: "https://www.youtube.com/embed/_gUkcQ71FNI?si=-1IRHn5MS4KohrkX",
           tag: "NEWS",
-          title: "OPEC does not control price of oil, says cartel chief",
+          title: "Senegal Holds Parliamentary Elections",
           description:
-            "OPEC president talks to Al Jazeera about output cuts, price volatility, and Russia’s war in Ukraine and its effect on oil prices.",
-          href: "https://www.aljazeera.com/economy/2023/1/31/opec-does-not-control-the-price-opec-president",
+            "Senegalese voters cast ballots on Sunday to elect a new parliament, The election is widely seen as a test run of the 2019 presidential election. President Macky Sall's ruling coalition is expected to retain its majority.",
         },
         {
-          image:
-            "https://www.aljazeera.com/wp-content/uploads/2020/12/2016-06-18T120000Z_630071213_D1AETKPXWZAA_RTRMADP_3_NIGERIA-SECURITY-NIGER.jpg?resize=770%2C513&quality=80",
+          src: "https://www.youtube.com/embed/OLJp0EFGSzM?si=iMBC9MEoRkCqni1e",
           tag: "NEWS",
-          title:
-            "Children seized. Towns attacked. Can Nigeria fix security crises?",
+          title: "South Sudan Cancels Independence Celebrations",
           description:
-            "From gangs kidnapping for ransom to armed groups overrunning towns, the government faces a series of security challenges across the country’s increasingly restive north.",
+            "For the second year in a row, the conflict-ridden country has cancelled festivities due to a lack of funds. In 2013, South Sudan became embroiled in a civil war that has killed tens of thousands of people. Nearly 4 million have been displaced.",
           href: "https://www.aljazeera.com/news/2021/3/2/children-seized-towns-attacked-can-nigeria-fix-security-crises",
-        },
-        {
-          image:
-            "https://www.aljazeera.com/wp-content/uploads/2021/02/2020-12-15T144408Z_270950136_RC2QNK9AOO09_RTRMADP_3_NIGERIA-SECURITY-KIDNAPPINGS.jpg?resize=770%2C513&quality=80",
-          tag: "NEWS",
-          title: "Dozens of Nigerian students abducted by armed ‘bandits’",
-          description:
-            "President Buhari has condemned abduction of 27 students from a secondary school in Niger state.",
-          href: "https://www.aljazeera.com/news/2021/2/17/unspecified-number-of-nigeria-school-students-reportedly-abducted",
         },
       ],
     };
@@ -96,21 +77,23 @@ export default defineComponent({
 <style scoped>
 .carousel-item {
   display: grid;
-  grid-template-columns: 400px 300px;
+  grid-template-columns: 450px 400px;
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding: 20px;
   background: #fff;
   border-radius: 10px;
-  border: 1px solid rgba(169, 169, 169, 0.348);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid rgba(169, 169, 169, 0.348); */
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .image {
-  width: 400px;
+  /* width: 400px; */
   margin: 0 auto;
-  border-radius: 10px;
+  height: 300px;
+  width: 100%;
+  /* border-radius: 10px; */
 }
 
 .content {
@@ -130,6 +113,7 @@ export default defineComponent({
   font-size: 1.5rem;
   margin: 10px 0;
   font-weight: 500;
+  line-height: 30px;
 }
 
 .description {

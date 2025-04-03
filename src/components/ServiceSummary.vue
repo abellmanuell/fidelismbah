@@ -75,20 +75,20 @@ const responsiveOptions = ref([
       class="grid space-y-16 lg:space-y-0 lg:grid-cols-3 place-items-center gap-x-4 relative z-20"
     >
       <div>
-        <Heading_2 content="Services" class-name="text-left !text-white" />
+        <Heading_2 content="Services" class-name="text-left !text-white mb-4" />
 
         <div>
-          <Paragraph class="text-white">
+          <Paragraph class="text-white leading-8">
             Leverage my journalism expertise to craft compelling content,
             investigate complex issues, and tell unforgettable stories.
           </Paragraph>
           <br />
-          <Paragraph class="text-white">
+          <Paragraph class="text-white leading-8">
             Whether you need a freelance journalist, content creator or media
             consultant, Fidelis have got you covered
           </Paragraph>
           <br />
-          <Paragraph class="text-white">
+          <Paragraph class="text-white leading-8">
             transforming information into engaging stories through expert
             research, interviewing and writing services
           </Paragraph>
