@@ -69,23 +69,23 @@ const socialnetworks = [
           />
           <ul class="text-sm space-y-6">
             <li>
-              <RouterLink to=""> Documentary Film Making </RouterLink>
+              <RouterLink to="/services"> Public Communications </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Speaking </RouterLink>
+              <RouterLink to="/creative-writing"> Creative writing </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Media Training </RouterLink>
+              <RouterLink to="/media-production"> Media Production </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Cooperate PR & Branding </RouterLink>
+              <RouterLink to="/press-relation"> Press Relations </RouterLink>
             </li>
 
             <li>
-              <RouterLink to=""> Private Interview </RouterLink>
+              <RouterLink to="/video-production"> Video Production </RouterLink>
             </li>
           </ul>
         </div>
