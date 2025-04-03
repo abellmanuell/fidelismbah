@@ -1,5 +1,5 @@
 <template>
-  <section :class="cn('py-20 px-4 lg:pt-20 lg:pb-10')">
+  <section class="px-4 pt-10 pb-2 lg:px-32 md:pt-40 md:px-20">
     <HeaderCaption
       title="Client Testimonial"
       subTitle="Words from client’s who have experienced the value of my Journalism
@@ -15,7 +15,7 @@
     >
       <template #item="slotProps">
         <div
-          class="shadow border-surface-200 dark:border-surface-700 rounded m-2 p-4 h-[250px] flex justify-center items-center flex-col"
+          class="shadow-lg border-surface-200 dark:border-surface-700 rounded m-2 p-4 h-[300px] flex justify-center items-center flex-col"
         >
           <div></div>
 

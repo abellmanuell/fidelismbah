@@ -1,8 +1,6 @@
 <template>
   <section
-    :class="
-      cn(' bg-[#DCE3EA] h-screen flex items-center justify-center text-center')
-    "
+    class="bg-[#DCE3EA] h-screen flex items-center justify-center text-center p-2"
   >
     <div class="w-[500px] space-y-4">
       <Heading_1 :content="title" class="!text-2xl" />

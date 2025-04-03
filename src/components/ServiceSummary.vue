@@ -7,13 +7,13 @@ import { ref } from "vue";
 const products = [
   {
     description: "Public Communications",
-    icon: "gi-satellite-communication",
+    // icon: "gi-satellite-communication",
     href: "/services",
     bg_img: "fidelis1.jpg",
   },
   {
     description: "Creative Writing",
-    icon: "gi-feather",
+    // icon: "gi-feather",
     href: "/creative-writing",
     bg_img: "fidelis1.jpg",
 
@@ -21,13 +21,13 @@ const products = [
   },
   {
     description: "Video Production",
-    icon: "bi-camera-video-fill",
+    // icon: "bi-camera-video-fill",
     href: "/media-production",
     bg_img: "video-production.jpg",
   },
   {
     description: "Press Relation",
-    icon: "gi-palm-tree",
+    // icon: "gi-palm-tree",
     href: "/press-relation",
     bg_img: "press-relation.jpg",
   },
@@ -109,7 +109,7 @@ const responsiveOptions = ref([
       </div>
 
       <div
-        class="bg-white text-primary-500 p-2 space-y-10 lg:space-y-0 lg:col-span-2 lg:col-start-2 lg:flex rounded-md gap-x-2 h-full"
+        class="bg-white text-primary-500 p-2 space-y-10 lg:space-y-0 lg:col-span-2 lg:col-start-2 lg:flex rounded-md gap-x-2"
       >
         <Carousel
           :value="products"
@@ -122,12 +122,7 @@ const responsiveOptions = ref([
           <template #item="slotProps">
             <div
               :style="{ backgroundImage: `url(${slotProps.data.bg_img})` }"
-              :class="
-                cn(
-                  'rounded-md border-surface-200 dark:border-surface-700 mb-2 border md:m-2 md:p-6  flex justify-center items-center flex-col relative',
-                  `relative bg-cover bg-center bg-no-repeat`
-                )
-              "
+              class="rounded-md border-surface-200 dark:border-surface-700 mb-2 border md:m-2 md:p-6 flex justify-center items-center flex-col relative bg-cover bg-center bg-no-repeat"
             >
               <div
                 class="absolute inset-0 bg-primary-500/80 lg:bg-primary-500/80"

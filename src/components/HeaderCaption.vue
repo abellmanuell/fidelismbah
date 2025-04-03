@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:w-96 m-auto text-center mb-15">
+  <div class="md:w-xl m-auto text-center mb-15">
     <Heading_2 :content="title" />
     <Paragraph class-name="text-md">
       {{ subTitle }}
