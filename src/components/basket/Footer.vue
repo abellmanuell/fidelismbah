@@ -63,8 +63,11 @@ const socialnetworks = [
     <div class="space-x-10 flex lg:min-w-[300px]">
       <div class="mt-20 lg:mt-0">
         <div>
-          <Heading_2 class-name="text-red-500 text-left" content="Services" />
-          <ul class="text-sm space-y-4">
+          <Heading_2
+            class-name="text-red-500 text-left mb-4"
+            content="Services"
+          />
+          <ul class="text-sm space-y-6">
             <li>
               <RouterLink to=""> Documentary Film Making </RouterLink>
             </li>
@@ -90,8 +93,8 @@ const socialnetworks = [
 
       <div class="mt-20 lg:mt-0">
         <div>
-          <Heading_2 class-name="text-red-500 text-left" content="Pages" />
-          <ul class="text-sm space-y-4">
+          <Heading_2 class-name="text-red-500 text-left mb-4" content="Pages" />
+          <ul class="text-sm space-y-6">
             <li>
               <RouterLink to="/about"> About </RouterLink>
             </li>

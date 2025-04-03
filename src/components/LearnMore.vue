@@ -11,7 +11,6 @@
 </template>
 
 <script setup>
-import { cn } from "../utils/cn";
 import Heading_1 from "./basket/Heading_1.vue";
 import LinkButton from "./LinkButton.vue";
 
