@@ -26,7 +26,7 @@
             <input
               type="text"
               placeholder="Name"
-              class="w-full border rounded p-2 border-primary-200 outline-none"
+              class="w-full border rounded p-2 border-primary-200 outline-none bg-white"
             />
           </div>
 
@@ -35,7 +35,7 @@
               <input
                 type="email"
                 placeholder="Email"
-                class="w-full border rounded p-2 border-primary-200 outline-none"
+                class="w-full border rounded p-2 border-primary-200 outline-none bg-white"
               />
             </div>
 
@@ -43,14 +43,14 @@
               <input
                 type="tel"
                 placeholder="Phone Number"
-                class="w-full border rounded p-2 border-primary-200 outline-none"
+                class="w-full border rounded p-2 border-primary-200 outline-none bg-white"
               />
             </div>
           </div>
 
           <textarea
             placeholder="Leave a message"
-            class="w-full border border-primary-200 p-2 rounded"
+            class="w-full border border-primary-200 p-2 rounded bg-white"
           ></textarea>
 
           <div class="my-4 w-full">
