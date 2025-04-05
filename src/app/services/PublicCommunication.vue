@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-[500px]">
+  <div class="md:min-h-[500px]">
     <img src="/fidelis1.jpg" alt="" class="w-full object-cover" />
   </div>
 

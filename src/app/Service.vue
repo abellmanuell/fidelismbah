@@ -14,7 +14,7 @@
             :to="service.href"
             class="flex flex-col items-center justify-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-center h-full"
           >
-            <v-icon :name="service.icon" scale="2" />
+            <!-- <v-icon :name="service.icon" scale="2" /> -->
             <span> {{ service.title }} </span>
           </RouterLink>
         </li>

@@ -44,28 +44,28 @@ export default defineComponent({
           tag: "NEWS",
           title: "Emergency officials evacuate Maiduguri flood victims",
           description:
-            "Emergency workers step up rescue efforts to evacuate thousands trapped in their homes after flood waters swept across #Maiduguri in northeast #Nigeria. Fidelis Mbah has more.",
+            "Emergency workers step up rescue efforts to evacuate thousands trapped in their homes...",
         },
         {
           src: "https://www.youtube.com/embed/0sRnn2ZtWR4",
           tag: "NEWS",
           title: "Nigeria investigates military drone attacks on villagers.",
           description:
-            "Nigeria’s army has admitted to making a mistake after a drone strike hit worshippers gathered to mark an important Muslim holiday event in northwest Kaduna state. Atleast 85 were killed during the attack. Fidelis Mbah visited Tudun Biri village and now reports.",
+            "Nigeria’s army has admitted to making a mistake after a drone strike hit worshippers...",
         },
         {
           src: "https://www.youtube.com/embed/_gUkcQ71FNI?si=-1IRHn5MS4KohrkX",
           tag: "NEWS",
           title: "Senegal Holds Parliamentary Elections",
           description:
-            "Senegalese voters cast ballots on Sunday to elect a new parliament, The election is widely seen as a test run of the 2019 presidential election. President Macky Sall's ruling coalition is expected to retain its majority.",
+            "Senegalese voters cast ballots on Sunday to elect a new parliament, The election is widely seen as a test run of the 2019 presidential election...",
         },
         {
           src: "https://www.youtube.com/embed/OLJp0EFGSzM?si=iMBC9MEoRkCqni1e",
           tag: "NEWS",
           title: "South Sudan Cancels Independence Celebrations",
           description:
-            "For the second year in a row, the conflict-ridden country has cancelled festivities due to a lack of funds. In 2013, South Sudan became embroiled in a civil war that has killed tens of thousands of people. Nearly 4 million have been displaced.",
+            "For the second year in a row, the conflict-ridden country has cancelled festivities due to a lack of funds...",
           href: "https://www.aljazeera.com/news/2021/3/2/children-seized-towns-attacked-can-nigeria-fix-security-crises",
         },
       ],
@@ -114,11 +114,13 @@ export default defineComponent({
   margin: 10px 0;
   font-weight: 500;
   line-height: 30px;
+  color: rgb(30 43 60);
 }
 
 .description {
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
+  margin: 20px 0;
 }
 
 @media only screen and (max-width: 600px) {

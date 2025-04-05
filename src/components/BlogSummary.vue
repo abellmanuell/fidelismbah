@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 pt-10 pb-2 lg:px-32 md:pt-40 md:px-20">
+  <section class="px-4 pt-10 pb-40 lg:px-32 md:pt-40 md:px-20">
     <HeaderCaption
       title="Blog and Media"
       subTitle="Where Journalism meets perspective: My insight, analysis and commentary
@@ -29,11 +29,26 @@
         src="https://www.youtube.com/embed/8sZoybLFeOQ?si=c5Kyu7BNl6czpCtJ"
         date="Aug 22, 2017"
       />
+
+      <Thumbnail
+        title="Growing Biker Culture Draws South African Women"
+        description="The number of black women taking to the road on motorcycles in South Africa is on the rise."
+        src="https://www.youtube.com/embed/MajeaW1ar1o?si=A8jJUAL0IZVOhyxW"
+        date="29 Jul 2017"
+      />
+
+      <Thumbnail
+        title="Liberia Marks 170 Years of Independence"
+        description="Africa’s oldest republic, Liberia, is marking its 170th anniversary of independence. People are also facing general elections in October."
+        src="https://www.youtube.com/embed/0GFAoast3Hw?si=EQUsakRkdfjvKTeo"
+        date="Dec 9, 2022"
+      />
     </div>
 
     <LinkButton
       href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
       target="_blank"
+      class-name="w-[263px] justify-center flex font-bold"
       >WATCH MORE VIDEOS</LinkButton
     >
 
@@ -61,13 +76,13 @@
             </div>
 
             <div>
-              <Paragraph class-name="text-center ">{{
+              <Paragraph class-name="text-center">{{
                 slotProps.data.description
               }}</Paragraph>
             </div>
 
             <div>
-              <Paragraph class-name="text-center text-base text-black">{{
+              <Paragraph class-name="text-center text-base text-black my-4">{{
                 slotProps.data.date
               }}</Paragraph>
             </div>

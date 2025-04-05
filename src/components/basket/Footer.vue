@@ -5,7 +5,11 @@ import Paragraph from "./Paragraph.vue";
 import Heading_2 from "./Heading_2.vue";
 
 const socialnetworks = [
-  { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
+  {
+    icon: "bi-twitter",
+    href: "https://twitter.com/FidelisMbah",
+    name: "twitter",
+  },
   {
     icon: "pr-linkedin",
     href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",
@@ -52,8 +56,17 @@ const socialnetworks = [
       <div>
         <ul class="flex space-x-4">
           <li v-for="social of socialnetworks">
-            <a :href="social.href">
-              <v-icon :name="social.icon" scale="1" />
+            <a :href="social.href" target="_blank">
+              <v-icon
+                v-if="social.name !== 'twitter'"
+                :name="social.icon"
+                scale="1.5"
+              />
+              <i
+                v-else
+                class="pi pi-twitter inline-block"
+                style="font-size: 1.4em"
+              ></i>
             </a>
           </li>
         </ul>

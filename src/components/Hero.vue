@@ -7,7 +7,11 @@ import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 import profilephoto from "../assets/profilephoto.png";
 
 const socialnetworks = [
-  { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
+  {
+    icon: "pi pi-twitter",
+    href: "https://twitter.com/FidelisMbah",
+    name: "twitter",
+  },
   {
     icon: "pr-linkedin",
     href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",
@@ -40,27 +44,30 @@ const socialnetworks = [
         >
           <Heading_1
             content="Fidelis Mbah"
-            class="text-white !text-[3.5625rem] leading-14 text-center !md:text-left"
+            class="text-white !text-[3.5625rem] leading-14 text-center !md:text-left mb-0"
           />
 
-          <Paragraph class-name="text-lg text-white text-center md:text-left">
-            <!-- <VueWriter
-            :array="[
-            'Journalism',
-            'Media Relations',
-            'Crisis Communication',
-            'Strategic Communications Advocacy',
-            ]"
-            :typeSpeed="50"
-            /> -->
+          <div>
+            <Paragraph
+              class-name="text-2xl font-bold text-white text-center md:text-left mt-10 mb-4"
+            >
+              <VueWriter
+                :array="[
+                  'Journalism',
+                  'Media Relations',
+                  'Crisis Communication',
+                  'Strategic Communications',
+                  'Advocacy',
+                ]"
+                :typeSpeed="50"
+              />
+            </Paragraph>
 
-            Journalism/Media Relations/Crisis Communication/Strategic
-            Communications/Advocacy
-            <br />
-            <br />
-            Excellent media/communications professional with strong journalistic
-            credentials.
-          </Paragraph>
+            <Paragraph class-name="text-lg text-white text-center md:text-left">
+              Excellent media communications professional with strong
+              journalistic credentials.
+            </Paragraph>
+          </div>
 
           <RouterLink
             to="/about"
@@ -73,7 +80,16 @@ const socialnetworks = [
           <ul class="flex space-x-4 text-white">
             <li v-for="social of socialnetworks">
               <a :href="social.href" target="_blank">
-                <v-icon :name="social.icon" scale="1.5" />
+                <v-icon
+                  v-if="social.name !== 'twitter'"
+                  :name="social.icon"
+                  scale="1.5"
+                />
+                <i
+                  v-else
+                  class="pi pi-twitter inline-block"
+                  style="font-size: 1.4em"
+                ></i>
               </a>
             </li>
           </ul>

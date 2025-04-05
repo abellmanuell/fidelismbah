@@ -11,7 +11,8 @@
       :numVisible="3"
       :numScroll="3"
       :responsiveOptions="responsiveOptions"
-      :autoplayInterval="3000"
+      :autoplayInterval="5000"
+      circular
     >
       <template #item="slotProps">
         <div
@@ -47,32 +48,46 @@ const products = [
   {
     src: testimonial1,
     description:
+      "Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction. Fidelis is a word smith and creative explorer, where words come alive",
+    author: "Don Fetus",
+    designation: "The Green Political Foundation Heinrich Böll Foundation",
+  },
+  {
+    src: testimonial1,
+    description:
       "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
-    author: "Stephenie Morgan",
+    author: "Don Fetus",
     designation: "Media Planning Centre for the Right to Health",
   },
   {
-    src: testimonial,
+    src: testimonial1,
     description:
-      "“Fidelis has played as crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today”",
-    author: "Fidelis Mbah",
+      "Fidelis has played as crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today",
+    author: "Don Fetus",
     designation:
       "Communications Coordinator Development Partnership International",
   },
   {
-    src: testimonial,
+    src: testimonial1,
     description:
-      "“I have seen Fidelis’ fruition and how he receives positive feedback and credibility from clients and audiencesthat is incredibly fulfilling”",
+      "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
     author: "Don Fetus",
-    designation:
-      "Deputy President (Nigeria) International Press Institute (IPI)",
+    designation: "Media Planning Centre for the Right to Health",
   },
   {
-    src: testimonial,
+    src: testimonial1,
     description:
-      "“Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction.Fidelis is a word smith and creative explorer, where words come alive”",
-    author: "Don Festus",
-    designation: "The Green Political Foundation Heinrich Böll Foundation",
+      "Fidelis has played as crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today",
+    author: "Don Fetus",
+    designation:
+      "Communications Coordinator Development Partnership International",
+  },
+  {
+    src: testimonial1,
+    description:
+      "“As a professional, Fidelis has proven to prioritize tasks, manage multiple projects and meet deadline in a fast paced environment. With this, he has successfully built a reputation”",
+    author: "Don Fetus",
+    designation: "Mentorship programme for journalists Akuko Foundation",
   },
 ];
 

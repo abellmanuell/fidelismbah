@@ -3,11 +3,11 @@
   <section :class="cn('px-5 pt-24 pb-2 lg:pt-30 lg:px-20 ')">
     <section :class="cn('py-5 lg:py-10 lg:px-20 lg:flex justify-between')">
       <div class="grid lg:grid-cols-2">
-        <div class="bg-primary-500/15 p-10 rounded-md">
+        <div class="bg-[#DCE3EA] p-10 rounded-md">
           <div>
             <Heading_3
               content="Contact Me"
-              class-name="text-left text-sm text-white inline-block bg-[#3b4b5d] p-2"
+              class-name="text-center text-sm text-white inline-block bg-[#3b4b5d] p-4 w-[129px] "
             />
           </div>
 
@@ -22,11 +22,11 @@
             together.
           </Paragraph>
 
-          <div class="my-4">
+          <div class="mb-2 mt-4">
             <input
               type="text"
               placeholder="Name"
-              class="w-full border rounded p-2 border-primary-200 outline-none bg-white"
+              class="w-full border rounded p-2 border-black outline-none"
             />
           </div>
 
@@ -35,7 +35,7 @@
               <input
                 type="email"
                 placeholder="Email"
-                class="w-full border rounded p-2 border-primary-200 outline-none bg-white"
+                class="w-full border rounded p-2 border-black outline-none"
               />
             </div>
 
@@ -43,14 +43,14 @@
               <input
                 type="tel"
                 placeholder="Phone Number"
-                class="w-full border rounded p-2 border-primary-200 outline-none bg-white"
+                class="w-full border rounded p-2 border-black outline-none"
               />
             </div>
           </div>
 
           <textarea
             placeholder="Leave a message"
-            class="w-full border border-primary-200 p-2 rounded bg-white"
+            class="h-52 w-full border border-black p-2 rounded resize-none bg-[#E4E4E4]"
           ></textarea>
 
           <div class="my-4 w-full">
@@ -61,15 +61,24 @@
           </div>
         </div>
 
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-start items-center">
           <div>
             <img :src="profilephoto" alt="Contact Me" class="hidden lg:block" />
           </div>
 
           <ul class="flex space-x-4">
             <li v-for="social of socialnetworks">
-              <a :href="social.href">
-                <v-icon :name="social.icon" scale="1" />
+              <a :href="social.href" target="_blank">
+                <v-icon
+                  v-if="social.name !== 'twitter'"
+                  :name="social.icon"
+                  scale="1.5"
+                />
+                <i
+                  v-else
+                  class="pi pi-twitter inline-block"
+                  style="font-size: 1.4em"
+                ></i>
               </a>
             </li>
           </ul>
@@ -98,7 +107,11 @@ import LearnMore from "../components/LearnMore.vue";
 import profilephoto from "../assets/profilephoto.png";
 
 const socialnetworks = [
-  { icon: "bi-twitter", href: "https://twitter.com/FidelisMbah" },
+  {
+    icon: "bi-twitter",
+    href: "https://twitter.com/FidelisMbah",
+    name: "twitter",
+  },
   {
     icon: "pr-linkedin",
     href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",

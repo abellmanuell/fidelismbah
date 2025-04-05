@@ -8,6 +8,7 @@ import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
 import Carousel from "primevue/carousel";
 import VueWriter from "vue-writer";
+import "primeicons/primeicons.css";
 
 import {
   GiHamburgerMenu,

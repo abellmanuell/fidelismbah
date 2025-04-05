@@ -12,9 +12,9 @@
   </div>
 
   <section
-    class="px-5 sm:pt-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:grid lg:grid-cols-2 gap-2"
+    class="px-5 sm:pt-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:grid lg:grid-cols-2 gap-4 md:gap-10"
   >
-    <div class="grid lg:grid-cols-2 items-center gap-10 py-2 rounded-md">
+    <div class="grid lg:grid-cols-[348px_1fr] gap-5 rounded-md">
       <div>
         <!-- <img
           src="https://www.aljazeera.com/wp-content/uploads/2024/02/2022-12-12T113008Z_379931144_RC2A6X9A2MH5_RTRMADP_3_NIGERIA-MILITARY-CHILDREN-1708513687.jpg?resize=770%2C513&quality=80"
@@ -23,7 +23,7 @@
         /> -->
         <iframe
           src="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
-          class="h-[200px] w-full lg:w-auto rounded-md"
+          class="w-[348px] h-[312px]"
         >
         </iframe>
       </div>
@@ -33,9 +33,9 @@
           class-name="text-left text-xl mb-4"
           content="Kenya Elections: Fake Social Media Reports Target Voters"
         />
-        <Paragraph class="text-sm">
+        <Paragraph class-name="my-4">
           Social media has played a major role in the lead up to Kenya
-          elections...
+          elections.
         </Paragraph>
         <a
           target="_blank"
@@ -48,9 +48,7 @@
       </div>
     </div>
 
-    <div
-      class="grid lg:grid-cols-2 items-center justify-center gap-10 py-2 rounded-md"
-    >
+    <div class="grid lg:grid-cols-[348px_1fr] gap-5">
       <div>
         <!-- <img
           src="https://www.aljazeera.com/wp-content/uploads/2020/12/2016-06-18T120000Z_630071213_D1AETKPXWZAA_RTRMADP_3_NIGERIA-SECURITY-NIGER.jpg?resize=770%2C513&quality=80"
@@ -59,7 +57,7 @@
         /> -->
         <iframe
           src="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
-          class="h-[200px] rounded-md w-full lg:w-auto"
+          class="w-[348px] h-[312px]"
         >
         </iframe>
       </div>
@@ -70,9 +68,9 @@
           class-name="text-left text-xl mb-4"
           content="Fears of Political Violence Haunt Kenyan Citizens"
         />
-        <Paragraph class="text-sm">
+        <Paragraph class-name="my-4">
           Kenyans go to the polls on Tuesday to elect a president and
-          parliament...
+          parliament.
         </Paragraph>
 
         <a
@@ -91,34 +89,34 @@
     <div class="my-5">
       <Thumbnail
         title="Eight soldiers killed in Mali attack, army says"
-        description="At least eight soldiers have been killed in western Mali, in what the army describes as a targeted attack. This comes as talks aimed at ending the country's political crisis come to a close. The attack is seen as another setback to any return to civilian rule."
+        description="At least eight soldiers have been killed in western Mali, in what the army describes as a targeted attack."
         src="https://www.youtube.com/embed/eKXN5SINu3s?si=vbBpNLln0z3BES3I"
         date="Dec 9, 2022"
       />
       <Thumbnail
         title="Nigeria labels bandit gangs ‘terrorists’"
-        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings..."
         src="https://www.youtube.com/embed/TTPY_TKGnvw?si=T6h-vaWXPCUsDluP"
         date="Dec 9, 2022"
       />
 
       <Thumbnail
         title="UN to Close Five Peacekeeping Bases in D.R Congo"
-        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        description="Five UN peace-keeping bases in the Democratic Republic of Congo will close on Monday."
         src="https://www.youtube.com/embed/b-l39-21r-Q?si=xftZwlP6CXjBR2fY"
         date="31 Jul 2017"
       />
 
       <Thumbnail
         title="Growing Biker Culture Draws South African Women"
-        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        description="The number of black women taking to the road on motorcycles in South Africa is on the rise."
         src="https://www.youtube.com/embed/MajeaW1ar1o?si=A8jJUAL0IZVOhyxW"
         date="29 Jul 2017"
       />
 
       <Thumbnail
         title="Liberia Marks 170 Years of Independence"
-        description="Nigeria's government has labelled criminal gangs as “terrorist” organisations. The gangs are blamed for mass kidnappings. Earlier this week, soldiers rescued 97 hostages, who were abducted more than two months ago. The classification will lead to harsher penalties. Al Jazeera's Fidelis Mbah reports from Abuja, Nigeria."
+        description="Africa’s oldest republic, Liberia, is marking its 170th anniversary of independence. People are also facing general elections in October."
         src="https://www.youtube.com/embed/0GFAoast3Hw?si=EQUsakRkdfjvKTeo"
         date="Dec 9, 2022"
       />
@@ -126,6 +124,7 @@
 
     <LinkButton
       href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
+      class-name="w-[263px] justify-center flex font-bold"
       >WATCH MORE VIDEOS</LinkButton
     >
   </section>

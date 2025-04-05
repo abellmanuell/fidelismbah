@@ -8,14 +8,14 @@ import ImageCarousel from "../components/ImageCarousel.vue";
 </script>
 
 <template>
-  <section :class="cn('pt-32 pb-20')">
+  <section :class="cn('pt-48 pb-20')">
     <div class="text-center mb-15">
       <Heading_2 content="Project and Appearance" />
 
       <div class="my-10">
         <img :src="project_image" alt="Project Image" class="w-full" />
       </div>
-      <Paragraph class="text-primary-500 px-4 lg:px-40 lg:w-4xl m-auto">
+      <Paragraph class="px-4 lg:px-40 lg:w-4xl m-auto">
         Delving into the issues that matter; indepth reporting, thought
         provoking discussion and media appearances that spark conversations
       </Paragraph>

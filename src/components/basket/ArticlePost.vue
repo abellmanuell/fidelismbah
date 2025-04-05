@@ -1,7 +1,11 @@
 <template>
   <div class="flex space-x-2 lg:space-x-4">
-    <img :src="src" alt="Fidelis Mbah" width="200" class="object-cover" />
-    <div class="flex flex-col justify-between space-y-4">
+    <img
+      :src="src"
+      alt="Fidelis Mbah"
+      class="object-cover md:w-[335px] md:h-[305px]"
+    />
+    <div class="flex flex-col justify-between space-y-4 my-4">
       <div>
         <span class="text-gray-500 mb-2 inline-block">{{ date }}</span>
         <h1 class="text-lg leading-5 font-bold">{{ title }}</h1>

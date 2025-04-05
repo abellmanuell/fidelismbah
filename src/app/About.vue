@@ -95,7 +95,7 @@
             <img :src="src" :alt="description" class="w-[500px] object-cover" />
           </div>
           <br />
-          <Paragraph class-name="text-center text-sm">
+          <Paragraph class-name="text-center">
             {{ description }}
           </Paragraph>
         </div>

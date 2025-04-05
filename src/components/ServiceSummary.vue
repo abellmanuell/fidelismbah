@@ -7,29 +7,28 @@ import { ref } from "vue";
 const products = [
   {
     description: "Public Communications",
-    // icon: "gi-satellite-communication",
     href: "/services",
     bg_img: "fidelis1.jpg",
   },
   {
     description: "Creative Writing",
-    // icon: "gi-feather",
     href: "/creative-writing",
-    bg_img: "fidelis1.jpg",
-
     bg_img: "creative-writing.jpg",
   },
   {
-    description: "Video Production",
-    // icon: "bi-camera-video-fill",
+    description: "Media Production",
     href: "/media-production",
-    bg_img: "video-production.jpg",
+    bg_img: "vp1.png",
   },
   {
     description: "Press Relation",
-    // icon: "gi-palm-tree",
     href: "/press-relation",
-    bg_img: "press-relation.jpg",
+    bg_img: "press-news.png",
+  },
+  {
+    description: "Video Production",
+    href: "/media-production",
+    bg_img: "media-production.jpg",
   },
 ];
 
@@ -94,7 +93,7 @@ const responsiveOptions = ref([
           </Paragraph>
         </div>
 
-        <div class="space-x-10 my-4">
+        <!--  <div class="space-x-10 my-4">
           <button
             class="border rounded-full p-2 inline-block cursor-pointer hover:bg-primary-400"
           >
@@ -105,7 +104,7 @@ const responsiveOptions = ref([
           >
             <v-icon name="bi-arrow-right" scale="1.5" />
           </button>
-        </div>
+        </div> -->
       </div>
 
       <div
@@ -131,9 +130,9 @@ const responsiveOptions = ref([
               <div
                 class="flex justify-center items-center flex-col min-h-[300px] space-y-2 z-100 text-white"
               >
-                <span>
+                <!-- <span>
                   <v-icon :name="slotProps.data.icon" scale="2" />
-                </span>
+                </span> -->
                 <div>
                   <Paragraph class-name="text-center  font-bold text-white">{{
                     slotProps.data.description
