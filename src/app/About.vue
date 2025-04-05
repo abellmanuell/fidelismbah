@@ -1,24 +1,20 @@
 <template>
   <Navigationbar />
-  <section
-    class="relative bg-cover bg-center bg-no-repeat px-5 pt-40 lg:px-40 lg:grid bg-[url(/about-slide-display.png)] h-screen flex items-end justify-center"
-  >
-    <div
-      class="absolute z-10 inset-0 bg-primary-500/70 lg:bg-primary-500/70"
-    ></div>
 
-    <div class="relative z-20 flex text-white flex-col justify-center bottom-0">
-      <!-- <Paragraph class="text-white">About</Paragraph> -->
-      <!-- <Heading_1
-        content="Fidelis Mbah"
-        class="!text-4xl text-white lg:!text-5xl"
-      /> -->
+  <video-background
+    src="/about-video.mp4"
+    class="h-screen relative"
+    overlay="linear-gradient(45deg,#1e2b3cd2,#1e2b3cd2)"
+  >
+    <section
+      class="relative bg-cover bg-center bg-no-repeat px-5 pt-40 lg:px-40 lg:grid h-screen flex items-end justify-center"
+    >
       <h1 class="text-white text-6xl font-semibold text-center leading-12">
         Fidelis <br />
         Mbah
       </h1>
-    </div>
-  </section>
+    </section>
+  </video-background>
 
   <section class="px-5 lg:px-80 py-20 lg:py-20 bg-primary-500/90 text-white">
     <!-- <Heading_1

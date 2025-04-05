@@ -9,6 +9,7 @@ import Aura from "@primevue/themes/aura";
 import Carousel from "primevue/carousel";
 import VueWriter from "vue-writer";
 import "primeicons/primeicons.css";
+import VideoBackground from "vue-responsive-video-background-player";
 
 import {
   GiHamburgerMenu,
@@ -106,6 +107,7 @@ const router = createRouter({
 const app = createApp(App);
 
 app.component("Carousel", Carousel);
+app.component("video-background", VideoBackground);
 app.use(router);
 app.use(PrimeVue, {
   theme: Aura,
