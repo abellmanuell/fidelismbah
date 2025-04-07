@@ -1,11 +1,7 @@
 <template>
   <Navigationbar />
 
-  <video-background
-    src="/about-video.mp4"
-    class="h-screen relative"
-    overlay="linear-gradient(45deg,#1e2b3cd2,#1e2b3cd2)"
-  >
+  <video-background src="/about-video.mp4" class="h-screen relative">
     <section
       class="relative bg-cover bg-center bg-no-repeat px-5 pt-40 lg:px-40 lg:grid h-screen flex items-end justify-center"
     >
@@ -88,7 +84,7 @@
       >
         <div v-for="{ src, description } of media" class="border p-4">
           <div>
-            <img :src="src" :alt="description" class="w-[500px] object-cover" />
+            <img :src="src" :alt="description" />
           </div>
           <br />
           <Paragraph class-name="text-center">

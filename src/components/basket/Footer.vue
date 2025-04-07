@@ -74,13 +74,13 @@ const socialnetworks = [
     </div>
 
     <div class="space-x-10 flex lg:min-w-[300px]">
-      <div class="mt-20 lg:mt-0">
+      <div class="mt-20 lg:mt-10">
         <div>
           <Heading_2
-            class-name="text-red-500 text-left mb-4"
+            class-name="text-red-500 text-left mb-6"
             content="Services"
           />
-          <ul class="text-sm space-y-6">
+          <ul class="text-sm space-y-10">
             <li>
               <RouterLink to="/services"> Public Communications </RouterLink>
             </li>
@@ -104,10 +104,10 @@ const socialnetworks = [
         </div>
       </div>
 
-      <div class="mt-20 lg:mt-0">
+      <div class="mt-20 lg:mt-10">
         <div>
-          <Heading_2 class-name="text-red-500 text-left mb-4" content="Pages" />
-          <ul class="text-sm space-y-6">
+          <Heading_2 class-name="text-red-500 text-left mb-6" content="Pages" />
+          <ul class="text-sm space-y-10">
             <li>
               <RouterLink to="/about"> About </RouterLink>
             </li>

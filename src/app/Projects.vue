@@ -14,7 +14,7 @@
   <section
     class="px-5 sm:pt-5 py-20 lg:pt-20 lg:pb-40 lg:px-20 lg:grid lg:grid-cols-2 gap-4 md:gap-10"
   >
-    <div class="grid lg:grid-cols-[348px_1fr] gap-5 rounded-md">
+    <div class="grid lg:grid-cols-[348px_1fr] gap-5 rounded-md mb-10 md:mb-0">
       <div>
         <!-- <img
           src="https://www.aljazeera.com/wp-content/uploads/2024/02/2022-12-12T113008Z_379931144_RC2A6X9A2MH5_RTRMADP_3_NIGERIA-MILITARY-CHILDREN-1708513687.jpg?resize=770%2C513&quality=80"
@@ -27,6 +27,7 @@
         >
         </iframe>
       </div>
+
       <div>
         <!-- <span class="bg-primary-200 px-1">NEWS</span> -->
         <Heading_2

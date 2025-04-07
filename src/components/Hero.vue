@@ -87,7 +87,7 @@ const socialnetworks = [
                 />
                 <i
                   v-else
-                  class="pi pi-twitter inline-block"
+                  class="pi pi-twitter block"
                   style="font-size: 1.4em"
                 ></i>
               </a>

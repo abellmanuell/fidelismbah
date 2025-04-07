@@ -62,7 +62,7 @@
         </div>
 
         <div class="flex flex-col justify-start items-center">
-          <div>
+          <div class="mb-10">
             <img :src="profilephoto" alt="Contact Me" class="hidden lg:block" />
           </div>
 

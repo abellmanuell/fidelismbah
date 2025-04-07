@@ -1,5 +1,5 @@
 <template>
-  <div class="flex space-x-2 lg:space-x-4">
+  <div class="flex flex-col md:flex-row space-x-2 lg:space-x-4">
     <img
       :src="src"
       alt="Fidelis Mbah"
