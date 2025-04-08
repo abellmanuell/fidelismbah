@@ -14,7 +14,7 @@ const socialnetworks = [
     icon: "pr-linkedin",
     href: "https://www.linkedin.com/in/fidelis-mbah-0a219913/",
   },
-  { icon: "co-facebook", href: "#" },
+  { icon: "co-facebook", href: "https://www.facebook.com/share/16HQ2x5ZkF/" },
   {
     icon: "bi-youtube",
     href: "https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber",
