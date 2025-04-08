@@ -80,7 +80,7 @@ const socialnetworks = [
             class-name="text-red-500 text-left mb-6"
             content="Services"
           />
-          <ul class="text-sm space-y-10">
+          <ul class="text-sm space-y-10 md:space-y-5">
             <li>
               <RouterLink to="/services"> Public Communications </RouterLink>
             </li>
@@ -107,7 +107,7 @@ const socialnetworks = [
       <div class="mt-20 lg:mt-10">
         <div>
           <Heading_2 class-name="text-red-500 text-left mb-6" content="Pages" />
-          <ul class="text-sm space-y-10">
+          <ul class="text-sm space-y-10 md:space-y-5">
             <li>
               <RouterLink to="/about"> About </RouterLink>
             </li>
