@@ -44,12 +44,12 @@ const socialnetworks = [
         >
           <Heading_1
             content="Fidelis Mbah"
-            class="text-white !text-[3.5625rem] leading-14 text-center !md:text-left mb-0"
+            class="text-white !text-[3.5625rem] md:!text-9xl leading-28 text-center md:text-left mb-0"
           />
 
           <div>
             <Paragraph
-              class-name="text-2xl font-bold text-white text-center md:text-left mt-10 mb-4"
+              class-name="text-2xl font-bold text-white text-center md:text-left my-4"
             >
               <VueWriter
                 :array="[
@@ -63,10 +63,10 @@ const socialnetworks = [
               />
             </Paragraph>
 
-            <Paragraph class-name="text-lg text-white text-center md:text-left">
+            <!-- <Paragraph class-name="text-lg text-white text-center md:text-left">
               Excellent media communications professional with strong
               journalistic credentials.
-            </Paragraph>
+            </Paragraph> -->
           </div>
 
           <RouterLink

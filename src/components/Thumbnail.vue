@@ -12,7 +12,7 @@
         :content="title"
       />
       <span class="text-sm text-primary-400 mb-2 block">{{ date }}</span>
-      <Paragraph class="text-[#746F6F]">
+      <Paragraph class="text-[#746F6F] hidden md:block">
         {{ description }}
       </Paragraph>
       <div>

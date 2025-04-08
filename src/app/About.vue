@@ -84,7 +84,7 @@
       >
         <div v-for="{ src, description } of media" class="border p-4">
           <div>
-            <img :src="src" :alt="description" />
+            <img :src="src" :alt="description" class="m-auto" />
           </div>
           <br />
           <Paragraph class-name="text-center">
