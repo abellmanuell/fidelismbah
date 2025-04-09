@@ -46,47 +46,47 @@ import { cn } from "../utils/cn";
 import HeaderCaption from "./HeaderCaption.vue";
 const products = [
   {
-    src: testimonial1,
+    src: "testimonial1",
     description:
-      "Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction. Fidelis is a word smith and creative explorer, where words come alive",
-    author: "Don Fetus",
+      "Weaver of words, teller of tales; exploring the human conditions through fiction, poetry and non fiction. Fidelis is a word smith and creative explorer, where words come alive",
+    author: "Omolara Adebayo",
     designation: "The Green Political Foundation Heinrich Böll Foundation",
   },
   {
-    src: testimonial1,
+    src: "testimonial1",
     description:
       "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
-    author: "Don Fetus",
+    author: "Adaora Nnenna Okoro",
     designation: "Media Planning Centre for the Right to Health",
   },
   {
-    src: testimonial1,
+    src: "testimonial1",
     description:
-      "Fidelis has played as crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today",
+      "Fidelis has played a crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today",
     author: "Don Fetus",
     designation:
       "Communications Coordinator Development Partnership International",
   },
   {
-    src: testimonial1,
+    src: "testimonial1",
     description:
       "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
-    author: "Don Fetus",
+    author: "Adaora Nnenna Okoro",
     designation: "Media Planning Centre for the Right to Health",
   },
   {
-    src: testimonial1,
+    src: "testimonial1",
     description:
-      "Fidelis has played as crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today",
-    author: "Don Fetus",
+      "Fidelis has played a crucial role in shaping the cultural landscape; creating contents that reflects challenges and inspires society today",
+    author: "Patience Olabode",
     designation:
       "Communications Coordinator Development Partnership International",
   },
   {
-    src: testimonial1,
+    src: "testimonial1",
     description:
-      "“As a professional, Fidelis has proven to prioritize tasks, manage multiple projects and meet deadline in a fast paced environment. With this, he has successfully built a reputation”",
-    author: "Don Fetus",
+      "“I have seen Fidelis’ fruition and how he receives positive feedback and credibility from clients and audiences that is incredibly fulfilling”",
+    author: "Mohammed Abubakar",
     designation: "Mentorship programme for journalists Akuko Foundation",
   },
 ];

@@ -54,7 +54,7 @@
     <div class="w-[550px] space-y-4">
       <Heading_1
         class-name="text-3xl"
-        content="Collaborate with Brands and Agenciesto create impactful results"
+        content="Collaborate with Brands and Agencies to create impactful results"
       />
 
       <div>

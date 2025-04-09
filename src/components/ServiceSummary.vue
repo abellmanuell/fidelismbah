@@ -128,7 +128,7 @@ const responsiveOptions = ref([
               ></div>
 
               <div
-                class="flex justify-center items-center flex-col min-h-[300px] space-y-2 z-100 text-white"
+                class="flex justify-center items-center flex-col min-h-[300px] space-y-2 z-10 text-white"
               >
                 <!-- <span>
                   <v-icon :name="slotProps.data.icon" scale="2" />
@@ -141,7 +141,7 @@ const responsiveOptions = ref([
               </div>
               <RouterLink
                 :to="slotProps.data.href"
-                class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center absolute -bottom-2 border-2 border-white shadow-md"
+                class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center absolute -bottom-2 border-2 border-white shadow-md z-50"
               >
                 <v-icon name="pr-arrow-up-right" scale="1" />
               </RouterLink>

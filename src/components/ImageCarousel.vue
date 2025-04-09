@@ -79,6 +79,7 @@ export default defineComponent({
   display: grid;
   grid-template-columns: 450px 400px;
   gap: 20px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
   padding: 20px;
