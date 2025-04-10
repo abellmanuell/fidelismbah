@@ -31,7 +31,7 @@ function setIsCloseSidebar() {
       <div
         :class="
           cn(
-            'fixed z-50 w-full bg-white flex-rows-reverse justify-between px-4 py-5 transition-all lg:px-20',
+            'fixed z-50 w-full bg-white flex-rows-reverse justify-between px-2 py-2 transition-all lg:px-20',
             !isOpenSidebar ? 'flex' : 'hidden'
           )
         "

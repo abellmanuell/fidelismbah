@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 pt-10 pb-40 lg:px-32 md:pt-40 md:px-20">
+  <section class="px-4 py-40 lg:px-32 md:pt-40 md:px-20">
     <HeaderCaption
       title="Blog and Media"
       subTitle="Where Journalism meets perspective: My insight, analysis and commentary
