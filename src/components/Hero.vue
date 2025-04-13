@@ -39,6 +39,13 @@ const socialnetworks = [
       <article
         class="flex flex-col-reverse md:grid md:grid-cols-2 md:items-center space-y-10"
       >
+        <DotLottieVue
+          style="height: 1000px; width: 1000px"
+          class="absolute top-20 right-20 hidden lg:block"
+          autoplay
+          loop
+          src="https://lottie.host/embed/0fcc7bd4-be4e-4b0c-8790-efde8c66bf21/v2uakFHn4B.lottie"
+        />
         <div
           class="space-y-10 flex justify-center items-center flex-col md:justify-start md:items-start"
         >
@@ -46,7 +53,6 @@ const socialnetworks = [
             content="Fidelis Mbah"
             class="text-white !text-[3.5625rem] md:!text-9xl leading-28 text-center md:text-left mb-0"
           />
-
           <div>
             <Paragraph
               class-name="text-2xl font-bold text-white text-center md:text-left my-4"

@@ -8,6 +8,7 @@ import ap3 from "@/assets/ap3.png";
 import ap4 from "@/assets/ap4.png";
 import { cn } from "../utils/cn";
 import HeaderCaption from "./HeaderCaption.vue";
+import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 </script>
 
 <template>
@@ -15,7 +16,14 @@ import HeaderCaption from "./HeaderCaption.vue";
     <HeaderCaption
       title="About Fidelis"
       subTitle="Award winning international Journalist and a correspondent with Al Jazeera
-      English television"
+    English television"
+    />
+
+    <DotLottieVue
+      style="height: 1000px; width: 1000px"
+      autoplay
+      loop
+      src="https://lottie.host/embed/ef5a86a3-8b44-42f4-b6d7-a7871e0a93f4/HTEUmKzzH3.lottie"
     />
 
     <div
