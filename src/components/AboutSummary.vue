@@ -19,12 +19,12 @@ import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
     English television"
     />
 
-    <DotLottieVue
+    <!-- <DotLottieVue
       style="height: 1000px; width: 1000px"
       autoplay
       loop
       src="https://lottie.host/embed/ef5a86a3-8b44-42f4-b6d7-a7871e0a93f4/HTEUmKzzH3.lottie"
-    />
+    /> -->
 
     <div
       class="grid space-y-16 lg:space-y-0 lg:grid-cols-2 place-items-center gap-4"
