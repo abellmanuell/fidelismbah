@@ -76,7 +76,7 @@
                 />
                 <i
                   v-else
-                  class="pi pi-twitter inline-block pt-4"
+                  class="pi pi-twitter inline-block pt-1"
                   style="font-size: 1.4em"
                 ></i>
               </a>
