@@ -1,5 +1,5 @@
 <template>
-  <div class="md:w-2xl m-auto text-center mb-15">
+  <div class="md:w-2xl m-auto text-center mb-15" v-motion-slide-visible-right>
     <Transition class="bounce">
       <Heading_2 :content="title" />
     </Transition>

@@ -1,5 +1,8 @@
 <template>
-  <div class="grid grid-cols-[auto_2fr] gap-x-4 items-center">
+  <div
+    class="grid grid-cols-[auto_2fr] gap-x-4 items-center"
+    v-motion-slide-visible-left
+  >
     <img :src="src" alt="Fidelis Mbah" class="object-cover w-32 md:w-52" />
     <div
       class="flex md:items-center flex-col md:flex-row md:justify-between space-y-4"

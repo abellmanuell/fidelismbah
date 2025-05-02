@@ -8,7 +8,7 @@
 
     <div class="flex flex-col-reverse lg:grid grid-cols-[200px_auto] gap-x-4">
       <ul class="grid lg:grid-rows-5 gap-y-2">
-        <li v-for="service of services">
+        <li v-for="service of services" v-motion-slide-visible-right>
           <RouterLink
             exactActiveClass="bg-primary-500 text-white"
             :to="service.href"
@@ -20,7 +20,10 @@
         </li>
       </ul>
 
-      <div class="mb-10 lg:m-0 overflow-y-scroll h-[700px]">
+      <div
+        class="mb-10 lg:m-0 overflow-y-scroll h-[700px]"
+        v-motion-slide-visible-right
+      >
         <RouterView />
       </div>
     </div>

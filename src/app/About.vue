@@ -17,7 +17,7 @@
       content="About Me"
       class="!text-3xl lg:!text-4xl mb-5 text-white"
     /> -->
-    <Paragraph class="text-white text-center">
+    <Paragraph class="text-white text-center" v-motion-slide-visible-right>
       Fidelis Mbah is an award-winning international journalist with more than
       two decades of reporting and interviewing influential personalities across
       the world.
@@ -26,13 +26,13 @@
       strategist, and brand expert.
     </Paragraph>
     <br />
-    <Paragraph class="text-white text-center">
+    <Paragraph class="text-white text-center" v-motion-slide-visible-right>
       Fidelis is presently a correspondent with Al Jazeera English Television.
       He was recently elected as the deputy President of International Press
       Institute (IPI) Nigeria chapter.
     </Paragraph>
     <br />
-    <Paragraph class="text-white text-center">
+    <Paragraph class="text-white text-center" v-motion-slide-visible-right>
       He has also worked as News Correspondent of the BBC World Service in
       Africa and the U.K. , Africa Deputy Director at CGTN Africa (CCTV News) in
       Kenya, Africa Correspondent at TRTWORLD in Turkey, the Nigeria reporter of
@@ -40,7 +40,7 @@
       network, NBC NEWS.
     </Paragraph>
     <br />
-    <Paragraph class="text-white text-center">
+    <Paragraph class="text-white text-center" v-motion-slide-visible-right>
       In recent years, he has covered elections across several countries, and
       reported political, economic and development news. He has also mentored
       journalists and organises media trainings for media executives and
@@ -82,7 +82,11 @@
       <div
         class="bg-white grid lg:grid-cols-4 grid-rows-3 lg:grid-rows-1 gap-5 p-4 sm:p-6"
       >
-        <div v-for="{ src, description } of media" class="border p-4">
+        <div
+          v-for="{ src, description } of media"
+          class="border p-4"
+          v-motion-slide-visible-right
+        >
           <div>
             <img :src="src" :alt="description" class="m-auto" />
           </div>
