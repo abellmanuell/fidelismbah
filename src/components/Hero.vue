@@ -3,9 +3,8 @@ import Heading_1 from "../components/basket/Heading_1.vue";
 import Paragraph from "../components/basket/Paragraph.vue";
 import { cn } from "../utils/cn";
 import { RouterLink } from "vue-router";
-import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 import profilephoto from "../assets/profilephoto.png";
-
+import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 const socialnetworks = [
   {
     icon: "pi pi-twitter",
@@ -34,18 +33,41 @@ const socialnetworks = [
     class="relative"
   >
     <div class="absolute inset-0 bg-primary-500/80 lg:bg-primary-500/80"></div>
+    <div class="absolute z-40 flex justify-between flex-wrap">
+      <DotLottieVue
+        style="height: 500px; width: 500px"
+        autoplay
+        loop
+        src="https://lottie.host/a6641ea1-1321-4077-a7fc-341a4715dd34/lt8U58lVQX.lottie"
+      />
 
+      <DotLottieVue
+        style="height: 500px; width: 500px"
+        autoplay
+        loop
+        src="https://lottie.host/a6641ea1-1321-4077-a7fc-341a4715dd34/lt8U58lVQX.lottie"
+      />
+
+      <DotLottieVue
+        style="height: 500px; width: 500px"
+        autoplay
+        loop
+        class="hidden md:block"
+        src="https://lottie.host/a6641ea1-1321-4077-a7fc-341a4715dd34/lt8U58lVQX.lottie"
+      />
+
+      <DotLottieVue
+        style="height: 500px; width: 500px"
+        autoplay
+        loop
+        class="hidden md:block"
+        src="https://lottie.host/a6641ea1-1321-4077-a7fc-341a4715dd34/lt8U58lVQX.lottie"
+      />
+    </div>
     <div class="px-4 pt-10 pb-2 lg:px-32 md:pt-40 md:px-20 relative z-20">
       <article
         class="flex flex-col-reverse md:grid md:grid-cols-2 md:items-center space-y-10"
       >
-        <DotLottieVue
-          style="height: 1000px; width: 1000px"
-          class="absolute top-20 right-20 hidden lg:block"
-          autoplay
-          loop
-          src="https://lottie.host/embed/0fcc7bd4-be4e-4b0c-8790-efde8c66bf21/v2uakFHn4B.lottie"
-        />
         <div
           class="space-y-10 flex justify-center items-center flex-col md:justify-start md:items-start"
         >
@@ -68,11 +90,6 @@ const socialnetworks = [
                 :typeSpeed="50"
               />
             </Paragraph>
-
-            <!-- <Paragraph class-name="text-lg text-white text-center md:text-left">
-              Excellent media communications professional with strong
-              journalistic credentials.
-            </Paragraph> -->
           </div>
 
           <RouterLink
@@ -111,4 +128,13 @@ const socialnetworks = [
       </article>
     </div>
   </section>
+
+  <!--   <div class="h-screen">
+    <DotLottieVue
+      style="height: 500px; width: 500px"
+      autoplay
+      loop
+      src="https://lottie.host/a6641ea1-1321-4077-a7fc-341a4715dd34/lt8U58lVQX.lottie"
+    />
+  </div> -->
 </template>
