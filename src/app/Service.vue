@@ -1,43 +1,45 @@
 <template>
   <Navigationbar />
-  <section :class="cn('px-5 py-20 lg:py-40 lg:px-20 ')">
-    <HeaderCaption
-      title="Explore Our Comprehensive Services Tailored to Your Unique Needs"
-      subTitle="If you’re looking to Report a news event, tell a story or find answers to numerous questions, our services are tailored to Delivering In-Depth Stories and Expert Analysis to Inform and Inspire the general public without fear, favor or bias."
-    />
+  <div class="overflow-hidden">
+    <section :class="cn('px-5 py-20 lg:py-40 lg:px-20 ')">
+      <HeaderCaption
+        title="Explore Our Comprehensive Services Tailored to Your Unique Needs"
+        subTitle="If you’re looking to Report a news event, tell a story or find answers to numerous questions, our services are tailored to Delivering In-Depth Stories and Expert Analysis to Inform and Inspire the general public without fear, favor or bias."
+      />
 
-    <div class="flex flex-col-reverse lg:grid grid-cols-[200px_auto] gap-x-4">
-      <ul class="grid lg:grid-rows-5 gap-y-2">
-        <li v-for="service of services" v-motion-slide-visible-right>
-          <RouterLink
-            exactActiveClass="bg-primary-500 text-white"
-            :to="service.href"
-            class="flex flex-col items-center justify-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-center h-full"
-          >
-            <!-- <v-icon :name="service.icon" scale="2" /> -->
-            <span> {{ service.title }} </span>
-          </RouterLink>
-        </li>
-      </ul>
+      <div class="flex flex-col-reverse lg:grid grid-cols-[200px_auto] gap-x-4">
+        <ul class="grid lg:grid-rows-5 gap-y-2">
+          <li v-for="service of services" v-motion-slide-visible-right>
+            <RouterLink
+              exactActiveClass="bg-primary-500 text-white"
+              :to="service.href"
+              class="flex flex-col items-center justify-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-center h-full"
+            >
+              <!-- <v-icon :name="service.icon" scale="2" /> -->
+              <span> {{ service.title }} </span>
+            </RouterLink>
+          </li>
+        </ul>
 
-      <div
-        class="mb-10 lg:m-0 overflow-y-scroll h-[700px]"
-        v-motion-slide-visible-right
-      >
-        <RouterView />
+        <div
+          class="mb-10 lg:m-0 overflow-y-scroll h-[700px]"
+          v-motion-slide-visible-right
+        >
+          <RouterView />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <LearnMore
-      title="Start the conversation that will transform your Story, Brand and Events"
-      :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
-    />
-  </section>
+    <section>
+      <LearnMore
+        title="Start the conversation that will transform your Story, Brand and Events"
+        :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
+      />
+    </section>
 
-  <!-- Foot component -->
-  <Footer />
+    <!-- Foot component -->
+    <Footer />
+  </div>
 </template>
 
 <script setup>
