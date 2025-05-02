@@ -58,13 +58,7 @@ const responsiveOptions = ref([
 
 <template>
   <section
-    :class="
-      cn(
-        'py-32 px-4 lg:px-20',
-        'bg-primary-500 text-white',
-        'bg-[url(/pattern.svg)] relative bg-cover bg-center bg-no-repeat'
-      )
-    "
+    class="py-32 px-4 lg:px-20, bg-primary-500 text-white, bg-[url(/pattern.svg)] relative bg-cover bg-center bg-no-repeat overflow-hidden"
   >
     <div
       class="absolute z-10 inset-0 bg-primary-500/20 lg:bg-primary-500/20"
@@ -73,7 +67,7 @@ const responsiveOptions = ref([
     <div
       class="grid space-y-16 lg:space-y-0 lg:grid-cols-3 place-items-center gap-x-4 relative z-20"
     >
-      <div>
+      <div v-motion-slide-visible-bottom>
         <Heading_2 content="Services" class-name="text-left !text-white mb-4" />
 
         <div>
@@ -108,6 +102,7 @@ const responsiveOptions = ref([
       </div>
 
       <div
+        v-motion-slide-visible-right
         class="bg-white text-primary-500 p-2 space-y-10 lg:space-y-0 lg:col-span-2 lg:col-start-2 lg:flex rounded-md gap-x-2"
       >
         <Carousel

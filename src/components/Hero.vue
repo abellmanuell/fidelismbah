@@ -33,7 +33,7 @@ const socialnetworks = [
     class="relative"
   >
     <div class="absolute inset-0 bg-primary-500/80 lg:bg-primary-500/80"></div>
-    <div class="absolute z-40 flex justify-between flex-wrap">
+    <!-- <div class="absolute z-40 flex justify-between flex-wrap">
       <DotLottieVue
         style="height: 500px; width: 500px"
         autoplay
@@ -63,7 +63,7 @@ const socialnetworks = [
         class="hidden md:block"
         src="https://lottie.host/a6641ea1-1321-4077-a7fc-341a4715dd34/lt8U58lVQX.lottie"
       />
-    </div>
+    </div> -->
     <div class="px-4 pt-10 pb-2 lg:px-32 md:pt-40 md:px-20 relative z-20">
       <article
         class="flex flex-col-reverse md:grid md:grid-cols-2 md:items-center space-y-10"
@@ -71,10 +71,12 @@ const socialnetworks = [
         <div
           class="space-y-10 flex justify-center items-center flex-col md:justify-start md:items-start"
         >
-          <Heading_1
-            content="Fidelis Mbah"
-            class="text-white !text-[3.5625rem] md:!text-9xl leading-28 text-center md:text-left mb-0"
-          />
+          <Transition class="bounce">
+            <Heading_1
+              content="Fidelis Mbah"
+              class="text-white !text-[3.5625rem] md:!text-9xl leading-28 text-center md:text-left mb-0"
+            />
+          </Transition>
           <div>
             <Paragraph
               class-name="text-2xl font-bold text-white text-center md:text-left my-4"
@@ -118,7 +120,7 @@ const socialnetworks = [
           </ul>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center" v-motion-slide-visible-right>
           <img
             :src="profilephoto"
             alt="Contact Me"

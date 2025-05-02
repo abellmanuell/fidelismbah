@@ -22,7 +22,7 @@ import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
     <div
       class="grid space-y-16 lg:space-y-0 lg:grid-cols-2 place-items-center gap-4"
     >
-      <div>
+      <div v-motion-pop-visible>
         <div class="grid grid-cols-4 gap-2 place-items-center">
           <img :src="ap1" alt="ap1" class="block h-full mr-1" />
           <img :src="ap4" alt="ap2" class="block h-full" />
@@ -31,7 +31,7 @@ import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
         </div>
       </div>
 
-      <div>
+      <div v-motion-pop-visible>
         <Paragraph class="!text-black">
           Fidelis Mbah is an award-winning international journalist with more
           than two decades of reporting and interviewing influential

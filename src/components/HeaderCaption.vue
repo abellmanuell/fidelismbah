@@ -1,6 +1,9 @@
 <template>
   <div class="md:w-2xl m-auto text-center mb-15">
-    <Heading_2 :content="title" />
+    <Transition class="bounce">
+      <Heading_2 :content="title" />
+    </Transition>
+
     <Paragraph class-name="!text-[16px]">
       {{ subTitle }}
     </Paragraph>

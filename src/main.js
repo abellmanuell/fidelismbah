@@ -41,6 +41,7 @@ import CreativeWriting from "./app/services/CreativeWriting.vue";
 import MediaProduction from "./app/services/MediaProduction.vue";
 import PressRelation from "./app/services/PressRelation.vue";
 import VideoProduction from "./app/services/VideoProduction.vue";
+import { MotionPlugin } from "@vueuse/motion";
 
 addIcons(
   GiHamburgerMenu,
@@ -112,6 +113,7 @@ app.use(router);
 app.use(PrimeVue, {
   theme: Aura,
 });
+app.use(MotionPlugin);
 app.use(VueWriter);
 app.component("v-icon", OhVueIcon);
 app.mount("#app");

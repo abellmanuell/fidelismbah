@@ -1,15 +1,14 @@
 <script setup>
 import { cn } from "../utils/cn";
 import project_image from "@/assets/project-image.png";
-import obi from "@/assets/obi.png";
 import Heading_2 from "@/components/basket/Heading_2.vue";
 import Paragraph from "@/components/basket/Paragraph.vue";
 import ImageCarousel from "../components/ImageCarousel.vue";
 </script>
 
 <template>
-  <section :class="cn('pt-48 pb-20')">
-    <div class="text-center mb-15">
+  <section class="'pt-48 pb-20 py-32 overflow-hidden">
+    <div class="text-center mb-15" v-motion-pop-visible>
       <Heading_2 content="Project and Appearance" />
 
       <div class="my-10">
@@ -99,7 +98,7 @@ import ImageCarousel from "../components/ImageCarousel.vue";
     </div>
   </section> -->
 
-  <section :class="cn('pb-20 px-4 lg:px-40')">
+  <section class="pb-20 px-4 lg:px-40">
     <ImageCarousel />
   </section>
 </template>

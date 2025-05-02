@@ -52,7 +52,7 @@
       >WATCH MORE VIDEOS</LinkButton
     >
 
-    <div class="mt-20">
+    <div class="mt-20" v-motion-slide-visible-right>
       <div class="my-10">
         <Paragraph class-name="font-bold"> Other updates </Paragraph>
       </div>

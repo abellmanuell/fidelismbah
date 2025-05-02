@@ -1,5 +1,8 @@
 <template>
-  <section class="px-4 pt-10 pb-2 lg:px-32 md:pt-40 md:px-20">
+  <section
+    class="px-4 pt-10 pb-2 lg:px-32 md:pt-40 md:px-20"
+    v-motion-slide-visible-bottom
+  >
     <HeaderCaption
       title="Client Testimonial"
       subTitle="Words from client’s who have experienced the value of my Journalism
@@ -85,7 +88,7 @@ const products = [
   {
     src: "testimonial1",
     description:
-      "“I have seen Fidelis’ fruition and how he receives positive feedback and credibility from clients and audiences that is incredibly fulfilling”",
+      "“I have seen Fidelis’ fruition and how he receives positive feedback and credibility from clients and audiencesthat is incredibly fulfilling”",
     author: "Mohammed Abubakar",
     designation: "Mentorship programme for journalists Akuko Foundation",
   },

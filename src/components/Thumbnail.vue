@@ -1,6 +1,7 @@
 <template>
   <div
     class="grid grid-cols-[150px_2fr] md:grid-cols-[262px_2fr] border-b border-b-[#746F6F] pt-4 pb-4 md:gap-x-10 gap-x-4 items-center space-y-2 lg:space-y-0"
+    v-motion-slide-visible-bottom
   >
     <div class="flex justify-center items-center lg:block">
       <iframe :src="src" class="w-[140px] h-[90px] md:w-[262px] md:h-[142px]">
