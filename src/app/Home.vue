@@ -1,28 +1,30 @@
 <template>
   <Navigationbar />
 
-  <Hero />
+  <div class="overflow-hidden">
+    <Hero />
 
-  <!-- About Section -->
-  <AboutSummary />
+    <!-- About Section -->
+    <AboutSummary />
 
-  <!-- Services Section -->
-  <ServiceSummary />
+    <!-- Services Section -->
+    <ServiceSummary />
 
-  <!-- Projects and appearance section -->
-  <ProjectSummary />
+    <!-- Projects and appearance section -->
+    <ProjectSummary />
 
-  <Testimonial />
+    <Testimonial />
 
-  <BlogSummary />
+    <BlogSummary />
 
-  <LearnMore
-    title="Start the conversation that will transform your Story, Brand and Events"
-    :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
-  />
+    <LearnMore
+      title="Start the conversation that will transform your Story, Brand and Events"
+      :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
+    />
 
-  <!-- Foot component -->
-  <Footer />
+    <!-- Foot component -->
+    <Footer />
+  </div>
 </template>
 
 <script setup>
