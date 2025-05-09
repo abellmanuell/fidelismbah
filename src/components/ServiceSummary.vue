@@ -58,7 +58,7 @@ const responsiveOptions = ref([
 
 <template>
   <section
-    class="py-32 px-4 lg:px-20, bg-primary-500 text-white, bg-[url(/pattern.svg)] relative bg-cover bg-center bg-no-repeat overflow-hidden"
+    class="py-32 px-4 lg:px-20 bg-primary-500 text-white, bg-[url(/pattern.svg)] relative bg-cover bg-center bg-no-repeat overflow-hidden"
   >
     <div
       class="absolute z-10 inset-0 bg-primary-500/20 lg:bg-primary-500/20"

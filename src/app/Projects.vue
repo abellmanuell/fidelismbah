@@ -32,7 +32,7 @@
           </iframe>
         </div>
 
-        <div>
+        <div class="flex flex-col">
           <!-- <span class="bg-primary-200 px-1">NEWS</span> -->
           <Heading_2
             class-name="text-left text-xl mb-4"
@@ -42,6 +42,7 @@
             Social media has played a major role in the lead up to Kenya
             elections.
           </Paragraph>
+          <div class="grow"></div>
           <a
             target="_blank"
             href="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
@@ -70,7 +71,7 @@
           </iframe>
         </div>
 
-        <div>
+        <div class="flex flex-col">
           <!-- <span class="bg-primary-200 px-1">NEWS</span> -->
           <Heading_2
             class-name="text-left text-xl mb-4"
@@ -80,7 +81,7 @@
             Kenyans go to the polls on Tuesday to elect a president and
             parliament.
           </Paragraph>
-
+          <div class="grow"></div>
           <a
             target="_blank"
             href="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
