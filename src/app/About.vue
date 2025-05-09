@@ -58,13 +58,13 @@
         />
 
         <div>
-          <a
-            href="/contact-me"
+          <RouterLink
+            to="/contact-me"
             class="text-sm py-2 px-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white"
           >
             <span>LEARN MORE</span>
             <v-icon name="pr-arrow-up-right" scale="1" />
-          </a>
+          </RouterLink>
         </div>
       </div>
     </section>

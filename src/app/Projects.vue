@@ -43,14 +43,14 @@
             elections.
           </Paragraph>
           <div class="grow"></div>
-          <a
+          <RouterLink
             target="_blank"
-            href="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
+            to="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block self-start"
           >
             <span> WATCH VIDEO </span>
             <v-icon name="pr-arrow-up-right" scale="1" />
-          </a>
+          </RouterLink>
         </div>
       </div>
 
@@ -82,14 +82,14 @@
             parliament.
           </Paragraph>
           <div class="grow"></div>
-          <a
+          <RouterLink
             target="_blank"
-            href="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
+            to="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block self-start"
           >
             <span> WATCH VIDEO </span>
             <v-icon name="pr-arrow-up-right" scale="1" />
-          </a>
+          </RouterLink>
         </div>
       </div>
     </section>

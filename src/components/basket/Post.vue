@@ -12,18 +12,20 @@
         <h1 class="text-lg font-bold">{{ title }}</h1>
       </div>
 
-      <a
-        :href="href"
+      <RouterLink
+        :to="href"
         class="text-sm py-2 px-4 border border-primary-500 rounded-full font-bold text-primary-500 hover:text-white hover:bg-primary-500 transition-all text-center"
       >
         <span> Read More </span>
         <v-icon name="pr-arrow-up-right" scale="1" />
-      </a>
+      </RouterLink>
     </div>
   </div>
 </template>
 
 <script setup>
+import { RouterLink } from "vue-router";
+
 const { src, date, title, href } = defineProps({
   src: {
     type: String,

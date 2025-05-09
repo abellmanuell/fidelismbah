@@ -2,6 +2,7 @@
 import logo from "@/assets/fidelis.png";
 import Paragraph from "./Paragraph.vue";
 import Heading_2 from "./Heading_2.vue";
+import { RouterLink } from "vue-router";
 
 const socialnetworks = [
   {
@@ -43,19 +44,19 @@ const socialnetworks = [
       </Paragraph>
 
       <div>
-        <a
-          href="/contact-me"
+        <RouterLink
+          to="/contact-me"
           class="text-sm py-2 px-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white"
         >
           <span> GET IN TOUCH</span>
           <v-icon name="pr-arrow-up-right" scale="1" />
-        </a>
+        </RouterLink>
       </div>
 
       <div>
         <ul class="flex space-x-4">
           <li v-for="social of socialnetworks">
-            <a :href="social.href" target="_blank">
+            <RouterLink :to="social.href" target="_blank">
               <v-icon
                 v-if="social.name !== 'twitter'"
                 :name="social.icon"
@@ -66,7 +67,7 @@ const socialnetworks = [
                 class="pi pi-twitter inline-block pt-1"
                 style="font-size: 1.4em"
               ></i>
-            </a>
+            </RouterLink>
           </li>
         </ul>
       </div>

@@ -10,14 +10,14 @@
           <!-- <h4 class="tag">{{ item.tag }}</h4> -->
           <h2 class="title">{{ item.title }}</h2>
           <p class="description">{{ item.description }}</p>
-          <a
+          <RouterLink
             target="_blank"
-            :href="item.src"
+            :to="item.src"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block"
           >
             <span> WATCH VIDEO </span>
             <v-icon name="pr-arrow-up-right" scale="1" />
-          </a>
+          </RouterLink>
         </div>
       </div>
     </Slide>
@@ -31,6 +31,7 @@
 
 <script>
 import { defineComponent } from "vue";
+import { RouterLink } from "vue-router";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import "vue3-carousel/carousel.css"; // Import styles
 

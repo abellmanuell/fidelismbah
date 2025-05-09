@@ -68,7 +68,7 @@
 
           <ul class="flex space-x-4">
             <li v-for="social of socialnetworks">
-              <a :href="social.href" target="_blank">
+              <RouterLink :to="social.href" target="_blank">
                 <v-icon
                   v-if="social.name !== 'twitter'"
                   :name="social.icon"
@@ -79,7 +79,7 @@
                   class="pi pi-twitter inline-block pt-1"
                   style="font-size: 1.4em"
                 ></i>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>
@@ -105,6 +105,7 @@ import { cn } from "../utils/cn";
 import Footer from "../components/basket/Footer.vue";
 import LearnMore from "../components/LearnMore.vue";
 import profilephoto from "../assets/profilephoto.png";
+import { RouterLink } from "vue-router";
 
 const socialnetworks = [
   {

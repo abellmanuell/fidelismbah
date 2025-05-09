@@ -104,7 +104,7 @@ const socialnetworks = [
 
           <ul class="flex space-x-4 text-white">
             <li v-for="social of socialnetworks">
-              <a :href="social.href" target="_blank">
+              <RouterLink :to="social.href" target="_blank">
                 <v-icon
                   v-if="social.name !== 'twitter'"
                   :name="social.icon"
@@ -115,7 +115,7 @@ const socialnetworks = [
                   class="pi pi-twitter block pt-1"
                   style="font-size: 1.4em"
                 ></i>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </div>
