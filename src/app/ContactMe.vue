@@ -87,11 +87,16 @@
     </section>
   </section>
 
-  <section>
-    <LearnMore
-      title="Start the conversation that will transform your Story, Brand and Events"
-      :linkProps="{ name: 'LEARN MORE', href: '/about' }"
-    />
+  <section
+    class="bg-[#DCE3EA] h-screen flex items-center justify-center text-center p-2"
+    v-motion-slide-visible-top
+  >
+    <div class="w-[500px] space-y-4" v-motion-slide-visible-bottom>
+      <Heading_1
+        content="Start the conversation that will transform your Story, Brand and Events"
+        class="!text-2xl"
+      />
+    </div>
   </section>
 
   <Footer />
@@ -106,6 +111,7 @@ import Footer from "../components/basket/Footer.vue";
 import LearnMore from "../components/LearnMore.vue";
 import profilephoto from "../assets/profilephoto.png";
 import { RouterLink } from "vue-router";
+import Heading_1 from "../components/basket/Heading_1.vue";
 
 const socialnetworks = [
   {
