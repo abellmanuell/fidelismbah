@@ -74,7 +74,7 @@ const socialnetworks = [
     </div>
 
     <div class="space-x-10 lg:space-x-32 flex lg:min-w-[400px]">
-      <div class="mt-20 lg:mt-30">
+      <div class="mt-20 lg:mt-28">
         <div>
           <Heading_2
             class-name="text-red-500 text-left mb-6"
@@ -104,7 +104,7 @@ const socialnetworks = [
         </div>
       </div>
 
-      <div class="mt-20 lg:mt-30">
+      <div class="mt-20 lg:mt-28">
         <div>
           <Heading_2 class-name="text-red-500 text-left mb-6" content="Pages" />
           <ul class="text-sm space-y-10 md:space-y-5">
