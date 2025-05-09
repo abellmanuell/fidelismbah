@@ -36,13 +36,13 @@ function setIsCloseSidebar() {
           )
         "
       >
-        <div>
+        <RouterLink to="/">
           <img
             :src="logo"
             alt="Fidelis Logo"
             :class="cn(!isOpenSidebar ? 'visible' : 'invisible')"
           />
-        </div>
+        </RouterLink>
 
         <!-- Desktop Mode -->
         <nav class="hidden lg:flex justify-center items-center">
