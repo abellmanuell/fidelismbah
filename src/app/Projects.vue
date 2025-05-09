@@ -45,7 +45,7 @@
           <div class="grow"></div>
           <RouterLink
             target="_blank"
-            to="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
+            href="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block self-start"
           >
             <span> WATCH VIDEO </span>
@@ -84,7 +84,7 @@
           <div class="grow"></div>
           <RouterLink
             target="_blank"
-            to="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
+            href="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block self-start"
           >
             <span> WATCH VIDEO </span>

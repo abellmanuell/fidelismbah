@@ -13,7 +13,7 @@
       </div>
 
       <RouterLink
-        :to="href"
+        :href="href"
         class="text-sm py-2 px-4 border border-primary-500 rounded-full font-bold text-primary-500 hover:text-white hover:bg-primary-500 transition-all text-center"
       >
         <span> Read More </span>
