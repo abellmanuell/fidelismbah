@@ -13,20 +13,18 @@
         <span class="text-gray-500 mb-2 inline-block">{{ date }}</span>
         <h1 class="text-lg font-medium leading-5">{{ title }}</h1>
       </div>
-      <RouterLink
+      <a
         :href="href"
         class="text-sm py-2 px-4 border border-primary-500 rounded-full font-bold text-primary-500 hover:text-white hover:bg-primary-500 transition-all text-center self-start"
       >
         <span> Read More </span>
         <v-icon name="pr-arrow-up-right" scale="1" />
-      </RouterLink>
+      </a>
     </div>
   </div>
 </template>
 
 <script setup>
-import { RouterLink } from "vue-router";
-
 const { src, date, title, href } = defineProps({
   src: {
     type: String,

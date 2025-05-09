@@ -20,11 +20,6 @@
         v-motion-slide-visible-left
       >
         <div>
-          <!-- <img
-          src="https://www.aljazeera.com/wp-content/uploads/2024/02/2022-12-12T113008Z_379931144_RC2A6X9A2MH5_RTRMADP_3_NIGERIA-MILITARY-CHILDREN-1708513687.jpg?resize=770%2C513&quality=80"
-          alt="Peter Obi in conversation"
-          class="rounded-md"
-        /> -->
           <iframe
             src="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
             class="w-[348px] h-[312px]"
@@ -43,14 +38,14 @@
             elections.
           </Paragraph>
           <div class="grow"></div>
-          <RouterLink
+          <a
             target="_blank"
             href="https://www.youtube.com/embed/xtzJJjR13Jc?si=YoM4TVicIQkrvnQ2"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block self-start"
           >
             <span> WATCH VIDEO </span>
             <v-icon name="pr-arrow-up-right" scale="1" />
-          </RouterLink>
+          </a>
         </div>
       </div>
 
@@ -59,11 +54,6 @@
         v-motion-slide-visible-right
       >
         <div>
-          <!-- <img
-          src="https://www.aljazeera.com/wp-content/uploads/2020/12/2016-06-18T120000Z_630071213_D1AETKPXWZAA_RTRMADP_3_NIGERIA-SECURITY-NIGER.jpg?resize=770%2C513&quality=80"
-          alt="Peter Obi in conversation"
-          class="rounded-md"
-        /> -->
           <iframe
             src="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
             class="w-[348px] h-[312px]"
@@ -82,14 +72,14 @@
             parliament.
           </Paragraph>
           <div class="grow"></div>
-          <RouterLink
+          <a
             target="_blank"
             href="https://www.youtube.com/embed/Ket0RrwlU-g?si=V-yxo4QPrhl_Vxg0"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block self-start"
           >
             <span> WATCH VIDEO </span>
             <v-icon name="pr-arrow-up-right" scale="1" />
-          </RouterLink>
+          </a>
         </div>
       </div>
     </section>
@@ -158,5 +148,4 @@ import HeaderCaption from "../components/HeaderCaption.vue";
 import LinkButton from "../components/LinkButton.vue";
 import Thumbnail from "../components/Thumbnail.vue";
 import LearnMore from "../components/LearnMore.vue";
-import { RouterLink } from "vue-router";
 </script>
