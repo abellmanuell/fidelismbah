@@ -12,9 +12,9 @@
     <Carousel
       :value="products"
       :numVisible="3"
-      :numScroll="3"
+      :numScroll="1"
       :responsiveOptions="responsiveOptions"
-      :autoplayInterval="5000"
+      :autoplayInterval="3000"
       circular
     >
       <template #item="slotProps">
@@ -43,9 +43,6 @@
 import { ref } from "vue";
 import Heading_2 from "../components/basket/Heading_2.vue";
 import Paragraph from "../components/basket/Paragraph.vue";
-import testimonial from "../assets/testimonial.jpg";
-import testimonial1 from "../assets/testimonial1.jpg";
-import { cn } from "../utils/cn";
 import HeaderCaption from "./HeaderCaption.vue";
 const products = [
   {

@@ -1,7 +1,7 @@
 <template>
   <Carousel :items-to-show="1" :wrap-around="true" :autoplay="3000">
     <Slide v-for="(item, index) in items" :key="index">
-      <div class="carousel-item" v-motion-slide-visible-bottom>
+      <div class="carousel-item">
         <div>
           <iframe :src="item.src" class="image"> </iframe>
         </div>

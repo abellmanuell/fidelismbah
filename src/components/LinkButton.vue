@@ -5,7 +5,7 @@
       target="_blank"
       :class="
         cn(
-          'text-sm py-2 px-4 mt-6 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white',
+          'text-sm py-2 px-4 mt-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white',
           className
         )
       "

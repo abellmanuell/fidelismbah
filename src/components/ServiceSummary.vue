@@ -1,5 +1,4 @@
 <script setup>
-import { cn } from "../utils/cn";
 import Heading_2 from "@/components/basket/Heading_2.vue";
 import Paragraph from "@/components/basket/Paragraph.vue";
 import { ref } from "vue";
