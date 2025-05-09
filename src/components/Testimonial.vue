@@ -71,7 +71,7 @@ const products = [
     src: "testimonial1",
     description:
       "Fidelis is dedicated to sharing stories that matter, amplifying marginalized voices and exploring the impact of technology on society.",
-    author: "Adaora Nnenna Okoro",
+    author: "Ahkere Kelvin",
     designation: "Media Planning Centre for the Right to Health",
   },
   {
