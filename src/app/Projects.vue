@@ -133,7 +133,6 @@
 
       <LinkButton
         href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
-        class-name="w-[263px] justify-center flex font-bold"
         >WATCH MORE VIDEOS</LinkButton
       >
     </section>

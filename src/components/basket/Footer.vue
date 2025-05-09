@@ -1,6 +1,5 @@
 <script setup>
 import logo from "@/assets/fidelis.png";
-import { cn } from "../../utils/cn";
 import Paragraph from "./Paragraph.vue";
 import Heading_2 from "./Heading_2.vue";
 
