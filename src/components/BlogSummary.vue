@@ -87,12 +87,12 @@
               }}</Paragraph>
             </div>
 
-            <RouterLink
+            <a
               :href="slotProps.data.href"
               class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center"
             >
               <v-icon name="pr-arrow-up-right" scale="1" />
-            </RouterLink>
+            </a>
           </div>
         </template>
       </Carousel>
@@ -107,7 +107,6 @@ import { ref } from "vue";
 import HeaderCaption from "./HeaderCaption.vue";
 import Thumbnail from "./Thumbnail.vue";
 import LinkButton from "./LinkButton.vue";
-import { RouterLink } from "vue-router";
 
 const responsiveOptions = ref([
   {
