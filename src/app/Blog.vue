@@ -95,7 +95,7 @@
       >
     </section>
     <LearnMore
-      title="Collaborate with Brands and Agenciesto create impactful results"
+      title="Start the conversation that will transform your Story, Brand and Events"
       :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
     />
 
@@ -109,9 +109,7 @@ import Heading_2 from "../components/basket/Heading_2.vue";
 import { cn } from "../utils/cn";
 import Navigationbar from "../components/basket/Navigationbar.vue";
 import Footer from "../components/basket/Footer.vue";
-import obi from "@/assets/obi.png";
 import HeaderCaption from "../components/HeaderCaption.vue";
-import Thumbnail from "../components/Thumbnail.vue";
 import LearnMore from "../components/LearnMore.vue";
 import ArticlePost from "../components/basket/ArticlePost.vue";
 import Post from "../components/basket/Post.vue";
