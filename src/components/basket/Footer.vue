@@ -104,8 +104,6 @@ const socialnetworks = [
         </div>
       </div>
 
-      <div class="grow lg:hidden"></div>
-
       <div class="mt-20 lg:mt-10">
         <div>
           <Heading_2 class-name="text-red-500 text-left mb-6" content="Pages" />

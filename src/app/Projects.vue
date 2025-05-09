@@ -128,7 +128,7 @@
     </section>
 
     <LearnMore
-      title="Collaborate with Brands and Agencies to create impactful results"
+      title="Start the conversation that will transform your Story, Brand and Events"
       :linkProps="{ name: 'LEARN MORE', href: '/contact-me' }"
     />
 
