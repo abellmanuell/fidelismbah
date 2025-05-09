@@ -121,7 +121,7 @@ const socialnetworks = [
             </li>
 
             <li>
-              <a href="/blogs"> Blogs </a>
+              <a href="/blog"> Blogs </a>
             </li>
 
             <li>
