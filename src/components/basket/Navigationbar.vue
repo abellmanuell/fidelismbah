@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { RouterLink } from "vue-router";
 import logo from "@/assets/fidelis.png";
 import { cn } from "@/utils/cn";
 
@@ -47,8 +48,8 @@ function setIsCloseSidebar() {
         <nav class="hidden lg:flex justify-center items-center">
           <ul class="mx-10 flex space-x-15 justify-center items-center">
             <li v-for="{ name, to, icon } in routes" class="leading-10">
-              <a
-                :href="to"
+              <RouterLink
+                :to="to"
                 activeClass="font-bold border-b"
                 class="inline-block w-full space-x-2px-4 text-primary-500"
               >
@@ -56,17 +57,17 @@ function setIsCloseSidebar() {
                 <span>
                   {{ name }}
                 </span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
           <div>
-            <a
-              href="/contact-me"
+            <RouterLink
+              to="/contact-me"
               class="py-2 px-4 rounded-full font-medium inline-block text-white bg-primary-500 transition-all text-lg"
             >
               <span> LET'S CONNECT </span>
               <v-icon name="pr-arrow-up-right" scale="1" />
-            </a>
+            </RouterLink>
           </div>
         </nav>
 
@@ -101,9 +102,9 @@ function setIsCloseSidebar() {
           </div>
           <ul class="mx-10">
             <li v-for="{ name, to, icon } in routes" class="leading-10">
-              <a
+              <RouterLink
                 @click="setIsOpenSideBar"
-                :href="to"
+                :to="to"
                 activeClass=" font-bold"
                 class="inline-block w-full space-x-2 rounded-md text-white"
               >
@@ -111,7 +112,7 @@ function setIsCloseSidebar() {
                 <span>
                   {{ name }}
                 </span>
-              </a>
+              </RouterLink>
             </li>
           </ul>
         </nav>

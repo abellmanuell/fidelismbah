@@ -10,14 +10,14 @@
       <div class="flex flex-col-reverse lg:grid grid-cols-[200px_auto] gap-x-4">
         <ul class="grid lg:grid-rows-5 gap-y-2">
           <li v-for="service of services" v-motion-slide-visible-right>
-            <a
+            <RouterLink
               exactActiveClass="bg-primary-500 text-white"
-              :href="service.href"
+              :to="service.href"
               class="flex flex-col items-center justify-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-center h-full"
             >
               <!-- <v-icon :name="service.icon" scale="2" /> -->
               <span> {{ service.title }} </span>
-            </a>
+            </RouterLink>
           </li>
         </ul>
 
