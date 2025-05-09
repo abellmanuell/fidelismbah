@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="flex flex-col md:flex-row space-x-2 lg:space-x-4"
-    v-motion-slide-visible-right
-  >
+  <div class="flex flex-col md:flex-row space-x-2 lg:space-x-4">
     <img
       :src="src"
       alt="Fidelis Mbah"
