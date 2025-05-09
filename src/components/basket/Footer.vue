@@ -29,9 +29,9 @@ const socialnetworks = [
 <template>
   <section class="py-20 px-4 lg:px-20 lg:flex justify-between">
     <div class="space-y-8">
-      <div class="h-[20%] flex">
+      <RouterLink to="/" class="h-[20%] flex">
         <img :src="logo" alt="Fidelis Logo" />
-      </div>
+      </RouterLink>
 
       <Paragraph class="lg:w-2/5">
         Fidelis Mbah is a consummate Journalist known for incisive reporting,
