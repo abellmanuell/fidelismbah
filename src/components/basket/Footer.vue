@@ -73,7 +73,7 @@ const socialnetworks = [
       </div>
     </div>
 
-    <div class="space-x-10 flex lg:min-w-[300px]">
+    <div class="space-x-10 lg:space-x-32 flex lg:min-w-[400px]">
       <div class="mt-20 lg:mt-10">
         <div>
           <Heading_2
