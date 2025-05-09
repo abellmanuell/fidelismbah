@@ -82,23 +82,23 @@ const socialnetworks = [
           />
           <ul class="text-sm space-y-10 md:space-y-5">
             <li>
-              <RouterLink to="/services"> Public Communications </RouterLink>
+              <a href="/services"> Public Communications </a>
             </li>
 
             <li>
-              <RouterLink to="/creative-writing"> Creative writing </RouterLink>
+              <a href="/creative-writing"> Creative writing </a>
             </li>
 
             <li>
-              <RouterLink to="/media-production"> Media Production </RouterLink>
+              <a href="/media-production"> Media Production </a>
             </li>
 
             <li>
-              <RouterLink to="/press-relation"> Press Relations </RouterLink>
+              <a href="/press-relation"> Press Relations </a>
             </li>
 
             <li>
-              <RouterLink to="/video-production"> Video Production </RouterLink>
+              <a href="/video-production"> Video Production </a>
             </li>
           </ul>
         </div>
@@ -109,23 +109,23 @@ const socialnetworks = [
           <Heading_2 class-name="text-red-500 text-left mb-6" content="Pages" />
           <ul class="text-sm space-y-10 md:space-y-5">
             <li>
-              <RouterLink to="/about"> About </RouterLink>
+              <a href="/about"> About </a>
             </li>
 
             <li>
-              <RouterLink to="/services"> Services </RouterLink>
+              <a href="/services"> Services </a>
             </li>
 
             <li>
-              <RouterLink to="/projects"> Projects </RouterLink>
+              <a href="/projects"> Projects </a>
             </li>
 
             <li>
-              <RouterLink to="/blogs"> Blogs </RouterLink>
+              <a href="/blogs"> Blogs </a>
             </li>
 
             <li>
-              <RouterLink to="/contact-me"> Contact </RouterLink>
+              <a href="/contact-me"> Contact </a>
             </li>
           </ul>
         </div>
