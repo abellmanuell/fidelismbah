@@ -11,7 +11,7 @@
     <div class="flex flex-col justify-between space-y-4 my-4">
       <div>
         <span class="text-gray-500 mb-2 inline-block">{{ date }}</span>
-        <h1 class="text-lg font-semibold leading-5">{{ title }}</h1>
+        <h1 class="text-lg font-medium leading-5">{{ title }}</h1>
       </div>
       <a
         :href="href"

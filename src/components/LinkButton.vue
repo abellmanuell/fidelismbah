@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-import { RouterLink } from "vue-router";
 import { cn } from "../utils/cn";
 
 const { href, className } = defineProps({

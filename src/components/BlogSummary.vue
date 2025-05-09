@@ -48,7 +48,7 @@
     <LinkButton
       href="https://www.youtube.com/channel/UCup-hGpD17dxFfxhvOqDsMA/featured?view_as=subscriber"
       target="_blank"
-      class-name="w-[263px] justify-center flex font-bold"
+      class-name="font-bold"
       >WATCH MORE VIDEOS</LinkButton
     >
 
