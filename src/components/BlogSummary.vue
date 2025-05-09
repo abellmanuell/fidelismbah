@@ -88,7 +88,7 @@
             </div>
 
             <RouterLink
-              :to="slotProps.data.href"
+              :href="slotProps.data.href"
               class="bg-primary-500 text-white p-4 rounded-full w-[50px] h-[50px] flex justify-center items-center"
             >
               <v-icon name="pr-arrow-up-right" scale="1" />

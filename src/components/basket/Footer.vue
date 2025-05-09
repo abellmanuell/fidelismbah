@@ -56,7 +56,7 @@ const socialnetworks = [
       <div>
         <ul class="flex space-x-4">
           <li v-for="social of socialnetworks">
-            <RouterLink :to="social.href" target="_blank">
+            <RouterLink :href="social.href" target="_blank">
               <v-icon
                 v-if="social.name !== 'twitter'"
                 :name="social.icon"

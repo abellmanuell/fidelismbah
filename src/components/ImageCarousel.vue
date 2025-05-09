@@ -12,7 +12,7 @@
           <p class="description">{{ item.description }}</p>
           <RouterLink
             target="_blank"
-            :to="item.src"
+            :href="item.src"
             class="text-sm mt-4 py-3 px-6 border rounded-full font-bold text-primary-500 bg-white hover:bg-primary-500 hover:text-white transition-all inline-block"
           >
             <span> WATCH VIDEO </span>

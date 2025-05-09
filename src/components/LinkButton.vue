@@ -1,7 +1,7 @@
 <template>
   <div>
-    <RouterLink
-      :to="href"
+    <a
+      :href="href"
       :class="
         cn(
           'text-sm py-2 px-4 mt-4 rounded-full font-medium inline-block text-primary-500 border transition-all hover:bg-primary-500 hover:text-white',
@@ -11,7 +11,7 @@
     >
       <span><slot /></span>
       <v-icon name="pr-arrow-up-right" scale="1" />
-    </RouterLink>
+    </a>
   </div>
 </template>
 
