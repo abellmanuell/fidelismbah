@@ -11,9 +11,9 @@
         <ul class="grid lg:grid-rows-5 gap-y-2">
           <li v-for="service of services" v-motion-slide-visible-right>
             <RouterLink
-              exactActiveClass="bg-primary-500 text-white"
+              exactActiveClass="bg-primary-500 !text-white !bg-primary-500"
               :to="service.href"
-              class="flex flex-col items-center justify-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white text-center h-full"
+              class="flex flex-col items-center justify-center lg:mb-4 border border-primary-500 text-primary-500 hover:bg-[#88a4b9] text-center h-full transition-all"
             >
               <!-- <v-icon :name="service.icon" scale="2" /> -->
               <span> {{ service.title }} </span>

@@ -50,7 +50,7 @@ function setIsCloseSidebar() {
             <li v-for="{ name, to, icon } in routes" class="leading-10">
               <RouterLink
                 :to="to"
-                activeClass="font-bold border-b"
+                activeClass="font-bold border-b !text-primary-500"
                 class="inline-block w-full space-x-2px-4 text-primary-500 hover:text-[#88a4b9] transition-all"
               >
                 <!-- <v-icon :name="icon" scale="1" /> -->

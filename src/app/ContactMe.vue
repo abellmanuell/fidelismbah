@@ -56,7 +56,7 @@
           <div class="my-4 w-full">
             <input
               type="submit"
-              class="w-full rounded-full font-bold text-white cursor-pointer border border-primary-500 hover:bg-white hover:text-primary-500 p-2 bg-primary-500 outline-none"
+              class="w-full rounded-full font-bold text-white cursor-pointer border border-primary-500 hover:bg-[#88a4b9] hover:text-primary-500 p-2 bg-primary-500 outline-none"
             />
           </div>
         </div>
